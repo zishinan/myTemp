@@ -96,6 +96,5 @@ ControlSmallcategory cn=new ControlSmallcategory();
 					</ul>
 				</nav>
 			</div>
-					<h1><a href="index.html">Witkey</a></h1>
 		</header>
 </html>

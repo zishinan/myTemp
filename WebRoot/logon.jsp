@@ -52,7 +52,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									<div class="right-top-corner">
 										<div class="inner">
 											<h2>快速注册</h2>
-											<form name="form1" method="post" action="<%=basePath %>servlet/NewhuiyuanServlet">
+											<form name="form1" method="post" action="registServlet">
 												<fieldset>
 												<div class="field">
 													<label>用户名:</label>

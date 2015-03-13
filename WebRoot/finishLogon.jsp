@@ -8,6 +8,7 @@ User u=(User)session.getAttribute("user");
 request.setCharacterEncoding("UTF-8");
 %>
 <!DOCTYPE html>
+<jsp:include page="head.jsp"></jsp:include>
 <html lang="en">
 <head>
 <title>会员注册页面</title>
@@ -44,24 +45,6 @@ request.setCharacterEncoding("UTF-8");
 </head>
 <body id="page5">
 <div id="main">
-    <table width="100%">
-      <tr>
-        <td width="34%" height="94"><img src="images/logo.gif"></td>
-        <td width="13%"></td>
-        <td width="53%"><div align="right">
-		<a href="logon.jsp" class="STYLE2">免费注册</a>
-		 <a class="STYLE2" href="enter.jsp">登录</a>
-		  <a href="home page.jsp" class="STYLE2">首页</a>
-	    帮助</div></td>
-      </tr>
-      <tr>
-        <td height="39" bordercolor="#000000"><span class="STYLE2">您的位置：</span><a href="index.jsp"><span class="STYLE1">首页</span></a><a href="logon.jsp"><span class="STYLE1">注册会员</span></a> </td>
-        <td bordercolor="#000000">&nbsp;</td>
-        <td bordercolor="#000000"><div align="right"></div></td>
-      </tr>
-  </table>
-  </div>
-<div id="main">
 <!-- header -->
 								<table width="100%">
 									  <tr>
@@ -94,13 +77,5 @@ request.setCharacterEncoding("UTF-8");
 									  </tr>
   								</table>
 	
-<!-- footer -->
-		<footer>
-			<div class="inside">
-				<a href="http://www.templatemonster.com" class="new_window">软件服务外包首页</a> from cssMoban.com<br/><a href="http://www.cssmoban.com/" class="new_window">cssMoban.com</a> provided by cssMoban.com
-			</div>
-		</footer>
-	</div>
-
-</body>
+<jsp:include page="foot.jsp"></jsp:include>
 </html>

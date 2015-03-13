@@ -1,4 +1,4 @@
-package servlet.witkey;
+package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -20,11 +20,11 @@ public class LogoutServlet extends HttpServlet
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException
 	{
-		System.out.println("退出登陆");
+		System.out.println("logout");
 		request.setCharacterEncoding("UTF-8");
 		HttpSession session = request.getSession();
 		session.setAttribute("user", null);
-		response.sendRedirect("inter.jsp");
+		response.sendRedirect("enter.jsp");
 	}
 }
 

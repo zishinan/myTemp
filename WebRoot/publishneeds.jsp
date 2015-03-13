@@ -9,6 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<jsp:include page="head.jsp"></jsp:include>
 <html>
 	<head>
 		<base href="<%=basePath %>">
@@ -85,29 +86,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 
 	<body id="page5">
-		<center>
-			<div id="main">
-				<table width="100%">
-					<tr>
-						<td width="34%" height="94">
-							<img src="images/logo.gif">
-						</td>
-						<td width="33%"></td>
-						<td width="33%">
-							<div align="right">
-								<a href="logon.jsp" class="STYLE2">免费注册</a>
-								<a class="STYLE2" href="enter.jsp">登录</a>
-								<a href="home page.jsp" class="STYLE2">首页</a>
-								帮助
-							</div>
-							<div align="left" style="padding: 12px 45px 40px 40px">
-								会员名字：<%=u.getUserName() %>
-								<a href="logon.jsp"></a>
-							</div>
-						</td>
-					</tr>
-				</table>
-			</div>
 			<div id="main">
 				<!-- header -->
 				<table width="100%">
@@ -122,7 +100,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									<div class="right-top-corner">
 										<div class="inner">
 											<h2>发布需求</h2>
-											<form id="contacts-form" method="post"action="<%=basePath %>servlet/FinishLogonServlet">
+											<form id="contacts-form" method="post"action="finishLogonServlet">
 												<table width="100%" border="1">
 												  <tr>
 													<td>选择类目：
@@ -199,18 +177,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</tr>
 				</table>
 
-				<!-- footer -->
-				<footer>
-				<div class="inside">
-					<a href="http://localhost:8080/witkey/Witkey/home page.jsp" class="new_window">软件服务外包首页</a>
-					from cssMoban.com
-					<br />
-					<a href="http://localhost:8080/witkey/Witkey/http://www.cssmoban.com/"
-						class="new_window">cssMoban.com</a> provided by cssMoban.com
-				</div>
-				</footer>
 			</div>
 		</center>
-		
+		<jsp:include page="foot.jsp"></jsp:include>
 	</body>
 </html>

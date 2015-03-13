@@ -115,6 +115,7 @@ public class ControlUser extends ControlDB
 	public int insertUsers(User u){
 		String sql="select count(*)from user where userName='"+u.getUserName()+"' ";
 			int i=this.count(sql);
+			System.out.println(i);
 		if(i>0){
 			return -1;
 		}
@@ -122,7 +123,6 @@ public class ControlUser extends ControlDB
 		 sql="insert into user(userName,userPwd,realName,phoneNumber,email,userState,taskCount)values('"+u.getUserName()+"','"+u.getUserPwd()+"','"+u.getRealName()+"','"+u.getPhoneNumber()+"','"+u.getEmail()+"',1,0)";
 		 System.out.println("sql"+sql);
 		 return this.insertAndGetUserId(sql);
-		// return this.insert(sql);
 		}
 	}
 	

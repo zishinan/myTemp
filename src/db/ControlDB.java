@@ -129,22 +129,22 @@ public class ControlDB
 		return i;
 	}
 	
-	//**************************************以下是添加用户返回用户编号的方法**********************************//
 	
 	public int insertAndGetUserId(String sql){
-		int i=0;
 		int userId = 0;
 		
 		try{
 			Connection conn = this.getConn();
 			conn.setAutoCommit(false);
 			Statement stmt = conn.createStatement();
-			i=stmt.executeUpdate(sql);
+			int i = stmt.executeUpdate(sql);
+			System.out.println(i);
 			ResultSet rs = stmt.executeQuery("select last_insert_id()");
 			if(rs.next())
 			{
 				userId = rs.getInt(1);
 			}
+			conn.commit();
 			conn.close();
 		}
 		catch(Exception ex){
@@ -152,7 +152,6 @@ public class ControlDB
 		}
 		return userId;
 	}
-	//**************************************添加用户返回用户编号的方法**********************************//
 	
 	public int insert(String sql,Connection conn){
 		int i= 0;
@@ -202,7 +201,6 @@ public class ControlDB
 			ex.printStackTrace();
 		}
 		
-		System.out.println("获得id"+i);
 		return i;
 	}
 	public String getString(String sql,Connection conn){
