@@ -18,7 +18,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	ControlCategory cu=new ControlCategory();
  %>  
   <body>
-  <form name="form1" method="post" action="<%=basePath %>servlet/NewCategoryServlet">
+  <form name="form1" method="post" action="newCategoryServlet">
     <table width="95%" border="0">
       <tr>
         <td width="20%"><div align="right">Àà±ðÃû³Æ£º</div></td>

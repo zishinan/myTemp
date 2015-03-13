@@ -40,7 +40,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       
       <td>&nbsp;</td>
        <td><a href="<%=basePath %>admin/altercategory.jsp?id=<%=cat.getCatId() %>">ÐÞ¸Ä</a></td>
-      <td><a href="<%=basePath %>servlet/DeleteCategory?id=<%=cat.getCatId() %>">É¾³ý</a></td>
+      <td><a href="deleteCategory?id=<%=cat.getCatId() %>">É¾³ý</a></td>
     </tr>
     <%} %>
   </table>

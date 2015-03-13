@@ -25,10 +25,20 @@ public class RegistServlet extends HttpServlet
 		request.setCharacterEncoding("UTF-8");
 		String userName=request.getParameter("username");
 		String pwd=request.getParameter("pwd");
+		String pwd2=request.getParameter("pwd2");
+		if(pwd == null || pwd2 == null){
+			request.setAttribute("fk", "输入信息不完整");
+			request.getRequestDispatcher("fk.jsp").forward(request, response);
+			return;
+		}
+		if(!pwd.equals(pwd2)){
+			request.setAttribute("fk", "密码不一致");
+			request.getRequestDispatcher("fk.jsp").forward(request, response);
+			return;
+		}
 		String realName=request.getParameter("realname");
 		String email=request.getParameter("email");
 		String phonenumber=request.getParameter("phonenumber");
-		System.out.println(userName+" "+pwd+" "+email);
 		User u=new User();
 		u.setUserName(userName);
 		u.setUserPwd(pwd);

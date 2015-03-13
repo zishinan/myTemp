@@ -45,7 +45,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<script type="text/javascript">
 		$(function()
 		{
-			$.post("servlet/SortQueryServlet?method=category",function(returnedData, status)
+			$.post("sortQueryServlet?method=category",function(returnedData, status)
 			{
 				for(var i = 0; i < returnedData.length; i++)
 				{
@@ -64,7 +64,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				$("#smallId option[value !='']").remove();
 				if($("#catId").val() != "")
 				{
-					$.post("servlet/SortQueryServlet?method=smallcat",{catId: $("#catId").val()},
+					$.post("sortQueryServlet?method=smallcat",{catId: $("#catId").val()},
 					function(returnedData, status)
 					{
 						for(var i = 0; i < returnedData.length; i++)
@@ -169,7 +169,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<aside>
 							<div class="inside">
 								<ul class="insurance">
-									<img src="<%=basePath  %>Witkey/images/pi.jpg">
+									<img src="<%=basePath  %>images/pi.jpg">
 								</ul>
 							</div>
 							</aside>
