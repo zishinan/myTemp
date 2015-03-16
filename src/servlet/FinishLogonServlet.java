@@ -9,10 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import tools.ServletUtil;
 import tools.VeDate;
-
 import db.*;
-
 import bean.*;
 
 @WebServlet("/finishLogonServlet")
@@ -20,7 +19,8 @@ public class FinishLogonServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		req.setCharacterEncoding("utf-8");
+		req.setCharacterEncoding("gbk");
+		resp.setCharacterEncoding("gbk");
 		User u = (User) req.getSession(true).getAttribute("user");
 		Task t = new Task();
 		int catId = Integer.parseInt(req.getParameter("catId"));
@@ -43,18 +43,15 @@ public class FinishLogonServlet extends HttpServlet {
 		t.setSmallId(smallId);
 		t.setUId(u.getUserId());
 		ControlTask at = new ControlTask();
-		String fk = "";
 		int i = at.insertTasks(t);
-		String url = "";
-		if (i > 0) {
-			req.setAttribute("Task", t);
-			url += "article.jsp";
-		} else {
-
-			req.setAttribute("Task", t);
-			url += "fk.jsp";
+		if (i <= 0) {
+			ServletUtil.alert(resp, "²åÈëÊý¾ÝÊ§°Ü", "index.jsp");
+			return;
 		}
-
+		
+		req.setAttribute("Task", t);
+		String url = "mine.jsp";
+		System.out.println(url);
 		req.getRequestDispatcher(url).forward(req, resp);
 	}
 

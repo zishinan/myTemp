@@ -7,8 +7,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html lang="en">
 
 <%
-User u=(User)session.getAttribute("user"); 
 request.setCharacterEncoding("UTF-8");
+User u=(User)session.getAttribute("user"); 
 ControlCategory cc=new ControlCategory();
 ControlSmallcategory cn=new ControlSmallcategory();
 %>
@@ -23,7 +23,6 @@ ControlSmallcategory cn=new ControlSmallcategory();
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style2.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/font.css" type="text/css" media="all">
 <script type="text/javascript" src="js/maxheight.js"></script>
 <script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
 <script type="text/javascript" src="js/script.js"></script>

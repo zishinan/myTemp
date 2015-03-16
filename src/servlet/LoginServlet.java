@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import tools.ServletUtil;
 import bean.User;
 import db.ControlUser;
 
@@ -21,6 +22,7 @@ public class LoginServlet extends HttpServlet
 	public void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException
 	{
+		response.setCharacterEncoding("UTF-8");
 		request.setCharacterEncoding("UTF-8");
 		String userName = request.getParameter("username");
 		System.out.println("login: "+userName);
@@ -28,7 +30,7 @@ public class LoginServlet extends HttpServlet
 		ControlUser cu = new ControlUser();
 		User u=cu.getUserNameAndGetPwd(userName, userPwd);
 		if(u == null){
-			response.sendRedirect("enter.jsp");
+			ServletUtil.alert(response, "您输入的用户名或密码不正确！", "login.jsp");
 			return;
 		}
 		HttpSession session = request.getSession();

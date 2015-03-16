@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <LINK href="<%=basePath %>css/admin.css" type="text/css" rel="stylesheet">
 </HEAD>
 <BODY onload=document.form1.name.focus();>
-<form method="post" action="servlet/LoginServlet">
+<form method="post" action="adminLoginServlet">
 <TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%" bgColor=#002779 
 border=0>
   <TR>
@@ -29,7 +29,6 @@ border=0>
             width=16></TD>
           <TD align=middle>
             <TABLE cellSpacing=0 cellPadding=0 width=230 border=0>
-              <FORM name=form1 action=? method=post>
               <TR height=5>
                 <TD width=5></TD>
                 <TD width=56></TD>
@@ -57,7 +56,7 @@ border=0>
                   </TR></TABLE></TD>
           <TD width=16><IMG height=122 src="<%=basePath %>images/login_4.jpg" 
             width=16></TD></TR></TABLE>
-      <TABLE cellSpacing=0 cellPadding=0 width=468 border=0>
+      <!-- <TABLE cellSpacing=0 cellPadding=0 width=468 border=0>
         <TR>
           <TD><IMG height=16 src="images/login_5.jpg" 
           width=468></TD></TR></TABLE>
@@ -65,5 +64,5 @@ border=0>
         <TR>
           <TD align=right><A href="http://www.865171.cn/" target=_blank><IMG 
             height=26 src="images/login_6.gif" width=165 
-            border=0></A></TD></TR></TABLE></TD></TR></TABLE>
+            border=0></A></TD></TR></TABLE></TD></TR></TABLE> -->
             </form></BODY></HTML>

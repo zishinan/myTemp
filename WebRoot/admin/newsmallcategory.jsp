@@ -16,7 +16,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
  %>  
   <body>
-  <form name="form1" method="post" action="<%=basePath %>servlet/NewSmallCategoryServlet">
+  <form name="form1" method="post" action="newSmallCategoryServlet">
     <p><span class="STYLE1">小类别名称：</span>    
     <input name="smallName" type="text" id="tytle" size="50">
    </p>

@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import tools.ServletUtil;
+
+import com.mysql.jdbc.StringUtils;
+
 import bean.User;
 import db.ControlUser;
 
@@ -21,19 +25,18 @@ public class RegistServlet extends HttpServlet
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException
 	{
-
-		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("gbk");
+		request.setCharacterEncoding("gbk");
 		String userName=request.getParameter("username");
 		String pwd=request.getParameter("pwd");
 		String pwd2=request.getParameter("pwd2");
-		if(pwd == null || pwd2 == null){
-			request.setAttribute("fk", "输入信息不完整");
-			request.getRequestDispatcher("fk.jsp").forward(request, response);
+		String fk = "";
+		if(StringUtils.isNullOrEmpty(pwd) || StringUtils.isNullOrEmpty(pwd2)||StringUtils.isNullOrEmpty(userName)){
+			ServletUtil.alert(response, "输入信息不完整","logon.jsp");
 			return;
 		}
 		if(!pwd.equals(pwd2)){
-			request.setAttribute("fk", "密码不一致");
-			request.getRequestDispatcher("fk.jsp").forward(request, response);
+			ServletUtil.alert(response, "密码不一致","logon.jsp");
 			return;
 		}
 		String realName=request.getParameter("realname");
@@ -59,8 +62,8 @@ public class RegistServlet extends HttpServlet
 
 		String url="";
 		if(userId== -1){
-			request.setAttribute("fk", "用户："+u.getUserName()+"已经存在！");
-			url+="fk.jsp";
+			ServletUtil.alert(response, "用户："+u.getUserName()+"已经存在！","logon.jsp");
+			return;
 		}
 		else if(userId>0){
 			HttpSession session = request.getSession();
@@ -70,5 +73,6 @@ public class RegistServlet extends HttpServlet
 		
 		request.getRequestDispatcher(url).forward(request, response);
 	}
+
 }
 
