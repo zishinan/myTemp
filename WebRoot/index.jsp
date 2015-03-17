@@ -1,3 +1,4 @@
+<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@ page language="java" import="java.util.*,db.*,bean.*"
 	pageEncoding="UTF-8"%>
 <%
@@ -162,18 +163,10 @@ Iterator iterator = categories.iterator();
 
 
 
-
-						
-
-
-
-
-
-
 					</div>
 				</tr>
 				<tr>
-					<td height="30" colspan="2"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最新任务</p>
+					<td height="30" colspan="2"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;快速通道</p>
 					</td>
 				</tr>
 			</table>
@@ -192,15 +185,19 @@ Iterator iterator = categories.iterator();
 					<img src="images/delu.jpg" width="230px">
 				</div>
 				<div style="margin: 10px 15px">
+				
+				<%
+					ControlTask controlTask = new ControlTask();
+					List<Task> newTasks = controlTask.getNewTasks();
+					for (Task task : newTasks) {
+				%>
 					<a href=""><p style="margin-bottom: 0">
-							用手机客户端发任务,送您人物大礼包!<span style="color: #999">2012/04/07</span>
+							<%=task.getTitle() %>><span style="color: #999"><%=task.getStartTime() %>></span>
 						</p></a> 
-					<a href="#"><p style="margin-bottom: 0; color: #000">
-							点心导航网站全民互动营销大赛<span style="color: #999">2012/04/06</span>
-						</p></a> 
-					<a href="#"><p style="margin-bottom: 0; color: #000">
-							全球公测一服务商评测报名通道开通<span style="color: #999">2012/03/13</span>
-						</p></a>
+				
+				<%
+					}
+				%>
 				</div>
 			</div>
 
