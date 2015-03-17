@@ -34,35 +34,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div class="tail-bottom">
 	<div id="main">
 <!-- header -->
-		<header>
-			<div class="nav-box">
-				<nav>
-					<ul class="fright">
-						<li><a href="index.jsp"><img src="images/pic-home-act.gif"></a></li>
-						<li><a href="logon.jsp">免费注册</a></li>
-						<li><a href="enter.jsp">登录</a></li>
-					</ul>
-					<ul>
-						<li class="current"><a href="index.jsp">首页</a></li>
-						<li><a href="about-us.jsp">所有需求</a></li>
-						<li><a href="articles.jsp">设计</a></li>
-						<li><a href="contact-us.jsp">推广</a></li>
-						<li><a href="sitemap.jsp">开发</a></li>
-						<li><a href="sitemap.jsp">写作</a></li>
-						<li><a href="sitemap.jsp">装修</a></li>
-						<li><a href="sitemap.jsp">商务</a></li>
-						<li><a href="sitemap.jsp">生活</a></li>
-					</ul>
-				</nav>
-			</div>
-			<h1><a href="index.jsp">BizSolutions</a></h1>
-			<form action="" id="search-form">
-				<fieldset>
-				<input type="text">
-				<a href="#" onClick="document.getElementById('search-form').submit()"><img src="images/button-search.gif"></a>
-				</fieldset>
-			</form>
-		</header>
+<jsp:include page="head.jsp"></jsp:include>
 		<div class="wrapper indent">
 <!-- content -->
 <div id="slogan"><img src="images/slogan.gif"/></div>
@@ -153,11 +125,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!-- aside -->
 		</div>
 <!-- footer -->
-		<footer>
-			<div class="inside">
-				<a href="http://www.templatemonster.com" class="new_window">网站模板</a> from cssMoban.com<br/><a href="http://www.cssmoban.com/" class="new_window">cssMoban.com</a> provided by cssMoban.com
-			</div>
-		</footer>
+		<jsp:include page="foot.jsp"></jsp:include>
 	</div>
 </div>
 </body>

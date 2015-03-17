@@ -99,6 +99,7 @@ Iterator iterator = categories.iterator();
 	while (iterator.hasNext()) {
 		Category category = (Category) iterator.next();
 		String categoryName = category.getCatName();
+		int catId = category.getCatId();
 %>		
 		
 		<div class="list1">
@@ -110,56 +111,30 @@ Iterator iterator = categories.iterator();
 
 							<div class="list1_left">
 								<ul>
-									<li>
 										<%
-											Category ccc = cc.getCategory1(1);
+											Collection c = cn.getSmallCategoryBycatId(catId);
+											Iterator it = c.iterator();
+											while(it.hasNext()){
+												Smallcategory sc = (Smallcategory)it.next();
 										%>
-										<div>
-											<a href="task.jsp?id=<%=ccc.getCatId()%>" target="main"
-												style="font-size: 16px; font-weight: bold; color: #1577DC"><%=ccc.getCatName()%></a>
-										</div> <%
- 	Collection c = cn.getSmallCategoryBycatId(1);
- 	Iterator it = c.iterator();
- 	while (it.hasNext()) {
- 		Smallcategory sc = (Smallcategory) it.next();
- %> <a href="article.jsp?id=<%=sc.getSmallId()%>"><%=sc.getSmallName()%></a>
-
+									<li>
+											<a href="task.jsp?id=<%=sc.getCatId()%>" target="main"
+												style="font-size: 16px; font-weight: bold; color: #1577DC"><%=sc.getSmallName()%></a>
+									</li>
 										<%
 											}
 										%>
-									</li>
 								</ul>
 							</div>
-
-							<div class="list1_right">
-								<ul>
-									<li>
-										<%
-											Category cccc = cc.getCategory1(2);
-										%>
-										<div>
-											<a href="task.jsp?id=<%=cccc.getCatId()%>"
-												style="font-size: 16px; font-weight: bold; color: #1577DC"><%=cccc.getCatName()%></a>
-										</div> <%
- 	Collection c1 = cn.getSmallCategoryBycatId(2);
- 	Iterator it1 = c1.iterator();
- 	while (it1.hasNext()) {
- 		Smallcategory sc1 = (Smallcategory) it1.next();
- %> <a href="article.jsp?id=<%=sc1.getSmallId()%>"><%=sc1.getSmallName()%></a>
-										<%
-											}
-										%>
-									</li>
-								</ul>
-							</div>
-
 
 
 						</div>
 		
 		
 		
-<% }%>	
+<% 
+}
+%>	
 
 
 
