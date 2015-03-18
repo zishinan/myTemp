@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*,bean.*,db.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,bean.*,db.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -99,23 +99,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<div class="left-top-corner">
 									<div class="right-top-corner">
 										<div class="inner">
-											<h2>å‘å¸ƒéœ€æ±‚</h2>
+											<h2>·¢²¼ĞèÇó</h2>
 											<form id="contacts-form" method="post"action="finishLogonServlet">
 												<table width="100%" border="1">
 												  <tr>
-													<td>é€‰æ‹©ç±»ç›®ï¼š
+													<td>Ñ¡ÔñÀàÄ¿£º
 													<select name="catId" id="catId">
-														<option value="">--è¯·é€‰æ‹©--</option>
+														<option value="">--ÇëÑ¡Ôñ--</option>
 													</select> 
 													<select name="smallId " id="smallId">
-														<option value="">--è¯·é€‰æ‹©--</option>
+														<option value="">--ÇëÑ¡Ôñ--</option>
 													</select>
 													
 													</td>
 												  </tr>
 												
 												  <tr>
-													<td>ä¸€å¥è¯æè¿°æ‚¨çš„éœ€æ±‚:</td>
+													<td>Ò»¾ä»°ÃèÊöÄúµÄĞèÇó:</td>
 												  </tr>
 												  
 												  <tr>
@@ -123,7 +123,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 												  </tr>
 											
 												  <tr>
-													<td>å°†éœ€æ±‚è¯´çš„è¯¦ç»†ç‚¹:</td>
+													<td>½«ĞèÇóËµµÄÏêÏ¸µã:</td>
 												  </tr>
 												  <tr>
 													<td><textarea name="taskContent" cols="" rows="" id="taskContent"></textarea></td>
@@ -132,19 +132,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 													<td><input type="file"/></td>
 												  </tr>
 												  <tr>
-													<td>è”ç³»æ–¹å¼:</td>
+													<td>ÁªÏµ·½Ê½:</td>
 												  </tr>
 												  <tr>
-													<td><input name="phoneNumber" type="text" id="phoneNumber" value="è¾“å…¥æ‰‹æœºå·"></td>
+													<td><input name="phoneNumber" type="text" id="phoneNumber" value="ÊäÈëÊÖ»úºÅ"></td>
 												  </tr>
 												  <tr>
-												  <td>èµé‡‘:</td>
+												  <td>ÉÍ½ğ:</td>
 												  </tr>
 												  <tr>
 												  <td><input name="money" type="text" id="money"></td>
 												  </tr>
 												  <tr>
-												  	<td>æˆªæ­¢æ—¶é—´ï¼š</td>
+												  	<td>½ØÖ¹Ê±¼ä£º</td>
 												  </tr>
 												  <tr>
 												  <td><input name="time" type="text" id="time"></td>
@@ -152,7 +152,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 												</table>
 												<div style="padding:20px">
 												<p>
-												<input name="æäº¤" type="submit" id="æäº¤" value="æäº¤" style="width:auto; background-color:#FF9900">
+												<input name="Ìá½»" type="submit" id="Ìá½»" value="Ìá½»" style="width:auto; background-color:#FF9900">
 												</p></div>
 												
 											</form>

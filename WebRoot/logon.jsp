@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -7,11 +7,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <jsp:include page="head.jsp"></jsp:include>
 <html lang="en">
 <head>
-<title>ä¼šå‘˜æ³¨å†Œé¡µé¢</title>
+<title>»áÔ±×¢²áÒ³Ãæ</title>
 <meta name="description" content="Place your description here">
 <meta name="keywords" content="put, your, keyword, here">
 <meta name="author" content="cssMoban.com - website templates provider">
-<meta charset="utf-8">
+<meta charset="gbk">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -51,36 +51,36 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<div class="left-top-corner">
 									<div class="right-top-corner">
 										<div class="inner">
-											<h2>å¿«é€Ÿæ³¨å†Œ</h2>
+											<h2>¿ìËÙ×¢²á</h2>
 											<form name="form1" method="post" action="registServlet">
 												<fieldset>
 												<div class="field">
-													<label>ç”¨æˆ·å:</label>
+													<label>ÓÃ»§Ãû:</label>
 													<input name="username" type="text" id="username">
 												</div>
 												<div class="field">
-													<label>è®¾ç½®å¯†ç :</label>
+													<label>ÉèÖÃÃÜÂë:</label>
 													<input name="pwd" type="password" id="pwd">
 												</div>
 												<div class="field">
-													<label>ç¡®è®¤å¯†ç :</label>
+													<label>È·ÈÏÃÜÂë:</label>
 													<input name="pwd2" type="password" id="pwd2">
 												</div>
 												<div class="field">
-													<label>çœŸå®žå§“å:</label>
+													<label>ÕæÊµÐÕÃû:</label>
 													<input name="realname" type="text" id="realname">
 												</div>
 												<div class="field">
-													<label>è”ç³»ç”µè¯:</label>
+													<label>ÁªÏµµç»°:</label>
 													<input name="phonenumber" type="text" id="phonenumber">
 												</div>
 												<div class="field">
-													<label>é‚®ç®±åœ°å€:</label>
+													<label>ÓÊÏäµØÖ·:</label>
 													<input name="email" type="text" id="email">
 												</div>
 												<div class="wrapper">
 													<label>&nbsp;</label>
-													<input name="æ³¨å†Œ" type="submit" id="æ³¨å†Œ" value="æ³¨å†Œ" style="width:auto; background-color:#FF9900"></div>
+													<input name="×¢²á" type="submit" id="×¢²á" value="×¢²á" style="width:auto; background-color:#FF9900"></div>
 												</fieldset>
 											</form>
 										</div>
@@ -97,10 +97,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										<aside>
 				<div class="inside">
 					<ul class="insurance">
-						<li><strong>å·²æœ‰è´¦å·ï¼Ÿ</strong></li>
-						<li><strong><a href="enter.jsp">ç«‹å³ç™»é™†</a></strong>è½¯ä»¶æœåŠ¡å¤–åŒ…ç½‘æ˜¯å…¨çƒé¢†å…ˆçš„åˆ›æ„æœåŠ¡äº¤æ˜“å¹³å°</li>
-						<li><strong>å‡­è‡ªå·±çš„ä¸€æŠ€ä¹‹é•¿èµšå–ï¼ŒçœŸé‡‘ç™½é“¶</strong>æˆ‘è¦èµšé’±</li>
-						<li><strong>å‘å¸ƒéœ€æ±‚ï¼ŒèŽ·å¾—è½¯ä»¶æœåŠ¡å¤–åŒ…çš„å¸®åŠ©</strong>ç«‹å³å‘å¸ƒéœ€æ±‚</li>
+						<li><strong>ÒÑÓÐÕËºÅ£¿</strong></li>
+						<li><strong><a href="enter.jsp">Á¢¼´µÇÂ½</a></strong>Èí¼þ·þÎñÍâ°üÍøÊÇÈ«ÇòÁìÏÈµÄ´´Òâ·þÎñ½»Ò×Æ½Ì¨</li>
+						<li><strong>Æ¾×Ô¼ºµÄÒ»¼¼Ö®³¤×¬È¡£¬Õæ½ð°×Òø</strong>ÎÒÒª×¬Ç®</li>
+						<li><strong>·¢²¼ÐèÇó£¬»ñµÃÈí¼þ·þÎñÍâ°üµÄ°ïÖú</strong>Á¢¼´·¢²¼ÐèÇó</li>
 					</ul>
 					</div></aside>
 										</td>

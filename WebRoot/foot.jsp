@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -25,7 +25,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
   		<footer>
 			<div class="inside">
-				<a href="http://www.templatemonster.com" class="new_window">è½¯ä»¶æœåŠ¡å¤–åŒ…ç½‘ç«™</a> @ç‰ˆæƒæ‰€æœ‰ï¼šXXXXX<br/><a href="http://www.XXXX.com/" class="new_window">è”ç³»æ–¹å¼</a> XXçº§XXç­ 101010101
+				<a href="http://www.templatemonster.com" class="new_window">Èí¼þ·þÎñÍâ°üÍøÕ¾</a> @°æÈ¨ËùÓÐ£ºXXXXX<br/><a href="http://www.XXXX.com/" class="new_window">ÁªÏµ·½Ê½</a> XX¼¶XX°à 101010101
 			</div>
 	  </footer>
   </body>

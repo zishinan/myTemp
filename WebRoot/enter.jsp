@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -7,11 +7,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>ä¼šå‘˜ç™»å½•é¡µé¢</title>
+<title>»áÔ±µÇÂ¼Ò³Ãæ</title>
 <meta name="description" content="Place your description here">
 <meta name="keywords" content="put, your, keyword, here">
 <meta name="author" content="cssMoban.com - website templates provider">
-<meta charset="utf-8">
+<meta charset="gbk">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -46,21 +46,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										<aside>
 				<div class="inside">
 					<ul>
-							<h2>ä¼šå‘˜ç™»å½•</h2>
+							<h2>»áÔ±µÇÂ¼</h2>
 							
 											<form id="contacts-form" action="loginServlet" method="post">
 												<fieldset>
 												<div class="field">
-													<label>å¸ å·:</label>
+													<label>ÕÊ ºÅ:</label>
 													<input name="username" type="text" id="username">
 												</div>
 												<div class="field">
-													<label>å¯† ç :</label>
+													<label>ÃÜ Âë:</label>
 													<input name="pwd" type="password" id="pwd">
 												</div>
 												<div class="wrapper">
-													<input name="ç™»å½•" type="submit" id="ç™»å½•" value="ç™»å½•" style="width:auto; background-color:#FF9900">
-													<p><label><span class="STYLE4">å¿˜è®°å¯†ç ï¼Ÿç«‹å³æ³¨å†Œ</span></label></p>
+													<input name="µÇÂ¼" type="submit" id="µÇÂ¼" value="µÇÂ¼" style="width:auto; background-color:#FF9900">
+													<p><label><span class="STYLE4">Íü¼ÇÃÜÂë£¿Á¢¼´×¢²á</span></label></p>
 												</div>
 												</fieldset>
 											</form>

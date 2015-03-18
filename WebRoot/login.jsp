@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -6,11 +6,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>ä¼šå‘˜æ³¨å†Œé¡µé¢</title>
+<title>»áÔ±×¢²áÒ³Ãæ</title>
 <meta name="description" content="Place your description here">
 <meta name="keywords" content="put, your, keyword, here">
 <meta name="author" content="cssMoban.com - website templates provider">
-<meta charset="utf-8">
+<meta charset="gbk">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -40,13 +40,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <td width="34%" height="94"><img src="images/logo.gif"></td>
         <td width="13%"></td>
         <td width="53%"><div align="right">
-		<a href="logon.jsp" class="STYLE2">å…è´¹æ³¨å†Œ</a>
-		 <a class="STYLE2" href="enter.jsp">ç™»å½•</a>
-		 <a href="home page.jsp" class="STYLE2">é¦–é¡µ</a>
-	    å¸®åŠ©</div></td>
+		<a href="logon.jsp" class="STYLE2">Ãâ·Ñ×¢²á</a>
+		 <a class="STYLE2" href="enter.jsp">µÇÂ¼</a>
+		 <a href="home page.jsp" class="STYLE2">Ê×Ò³</a>
+	    °ïÖú</div></td>
       </tr>
       <tr>
-        <td height="39" bordercolor="#000000"><span class="STYLE2">æ‚¨çš„ä½ç½®ï¼š</span><a href="index.html"><span class="STYLE1">é¦–é¡µ</span></a><a href="logon.jsp"><span class="STYLE1">æ³¨å†Œä¼šå‘˜</span></a> </td>
+        <td height="39" bordercolor="#000000"><span class="STYLE2">ÄúµÄÎ»ÖÃ£º</span><a href="index.html"><span class="STYLE1">Ê×Ò³</span></a><a href="logon.jsp"><span class="STYLE1">×¢²á»áÔ±</span></a> </td>
         <td bordercolor="#000000">&nbsp;</td>
         <td bordercolor="#000000"><div align="right"><img src="images/zhu.jpg"></div></td>
       </tr>
@@ -68,20 +68,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<div class="left-top-corner">
 									<div class="right-top-corner">
 										<div class="inner">
-											<h2>ç™»é™†å¸å·</h2>
+											<h2>µÇÂ½ÕÊºÅ</h2>
 											<form name="form1" method="post" action="LoginServlet">
 												<fieldset>
 												<div class="field">
-													<label>ç”¨æˆ·å:</label>
+													<label>ÓÃ»§Ãû:</label>
 													<input name="username" type="text" id="username">
 												</div>
 												<div class="field">
-													<label>å¯†ç :</label>
+													<label>ÃÜÂë:</label>
 													<input name="pwd" type="password" id="pwd">
 												</div>
 												<div class="wrapper">
 													<label>&nbsp;</label>
-													<input name="login" type="submit" id="login" value="ç™»é™†" style="width:auto; background-color:#FF9900"></div>
+													<input name="login" type="submit" id="login" value="µÇÂ½" style="width:auto; background-color:#FF9900"></div>
 												</fieldset>
 											</form>
 										</div>
@@ -98,10 +98,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										<aside>
 				<div class="inside">
 					<ul class="insurance">
-						<li><strong>å·²æœ‰è´¦å·ï¼Ÿ</strong></li>
-						<li><strong><input name="æäº¤" type="submit" value="ç«‹å³ç™»å½•"></strong>è½¯ä»¶æœåŠ¡å¤–åŒ…ç½‘æ˜¯å…¨çƒé¢†å…ˆçš„åˆ›æ„æœåŠ¡äº¤æ˜“å¹³å°</li>
-						<li><strong>å‡­è‡ªå·±çš„ä¸€æŠ€ä¹‹é•¿èµšå–ï¼ŒçœŸé‡‘ç™½é“¶</strong>æˆ‘è¦èµšé’±</li>
-						<li><strong>å‘å¸ƒéœ€æ±‚ï¼Œè·å¾—è½¯ä»¶æœåŠ¡å¤–åŒ…çš„å¸®åŠ©</strong>ç«‹å³å‘å¸ƒéœ€æ±‚</li>
+						<li><strong>ÒÑÓĞÕËºÅ£¿</strong></li>
+						<li><strong><input name="Ìá½»" type="submit" value="Á¢¼´µÇÂ¼"></strong>Èí¼ş·şÎñÍâ°üÍøÊÇÈ«ÇòÁìÏÈµÄ´´Òâ·şÎñ½»Ò×Æ½Ì¨</li>
+						<li><strong>Æ¾×Ô¼ºµÄÒ»¼¼Ö®³¤×¬È¡£¬Õæ½ğ°×Òø</strong>ÎÒÒª×¬Ç®</li>
+						<li><strong>·¢²¼ĞèÇó£¬»ñµÃÈí¼ş·şÎñÍâ°üµÄ°ïÖú</strong>Á¢¼´·¢²¼ĞèÇó</li>
 					</ul>
 					</div></aside>
 										</td>
@@ -111,7 +111,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!-- footer -->
 		<footer>
 			<div class="inside">
-				<a href="http://www.templatemonster.com" class="new_window">è½¯ä»¶æœåŠ¡å¤–åŒ…é¦–é¡µ</a> from cssMoban.com<br/><a href="http://www.cssmoban.com/" class="new_window">cssMoban.com</a> provided by cssMoban.com
+				<a href="http://www.templatemonster.com" class="new_window">Èí¼ş·şÎñÍâ°üÊ×Ò³</a> from cssMoban.com<br/><a href="http://www.cssmoban.com/" class="new_window">cssMoban.com</a> provided by cssMoban.com
 			</div>
 		</footer>
 	</div>

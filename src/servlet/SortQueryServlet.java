@@ -50,7 +50,7 @@ public class SortQueryServlet extends HttpServlet
 	private void write2Jsp(HttpServletResponse resp, Collection coll)
 			throws IOException {
 		//处理缓存文件
-		resp.setContentType("application/json; charset=utf-8");
+		resp.setContentType("application/json; charset=gbk");
 		resp.setHeader("pragma", "no-cache");
 		resp.setHeader("cache-control", "no-cache");
 		

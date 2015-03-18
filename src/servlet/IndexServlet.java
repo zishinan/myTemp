@@ -14,8 +14,8 @@ import tools.ServletUtil;
 import bean.User;
 import db.ControlUser;
 
-@WebServlet("/loginServlet")
-public class LoginServlet extends HttpServlet
+@WebServlet("/indexServlet")
+public class IndexServlet extends HttpServlet
 {
 
 	@Override

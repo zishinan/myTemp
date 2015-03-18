@@ -1,4 +1,4 @@
-ï»¿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -6,11 +6,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>æ˜¾ç¤ºä»»åŠ¡href72~114</title>
+<title>ÏÔÊ¾ÈÎÎñhref72~114</title>
 <meta name="description" content="Place your description here">
 <meta name="keywords" content="put, your, keyword, here">
 <meta name="author" content="cssMoban.com - website templates provider">
-<meta charset="utf-8">
+<meta charset="gbk">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -51,18 +51,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				 <a href="#"> <img src="images/10.jpg" border="0"/></a>
 				  <a href="#"> <img src="images/010.jpg" border="0"/></a>
 				   <a href="#"> <img src="images/100.jpg" border="0"/></a>
-				  ï¿¥<input type="text" size="8;">è‡³<select name="select">
-                    <option value="100å…ƒä»¥ä¸‹">100å…ƒä»¥ä¸‹</option>
+				  £¤<input type="text" size="8;">ÖÁ<select name="select">
+                    <option value="100ÔªÒÔÏÂ">100ÔªÒÔÏÂ</option>
                     <option value="100-500">100-500</option>
                     <option value="500-1000">500-1000</option>
 					<option value="1000-2000">1000-2000</option>
                     <option value="2000-5000">2000-5000</option>
                     <option value="5000-20000">5000-20000</option>
-					<option value="2ä¸‡ä»¥ä¸Š">2ä¸‡ä»¥ä¸Š</option>
+					<option value="2ÍòÒÔÉÏ">2ÍòÒÔÉÏ</option>
                   </select>
-				  <input type="button" value="ç¡®å®š"/>
-				  <input type="text"  size="8"value="" data-value="è¾“å…¥å…³é”®å­—">
-					<input type="submit" value="æœç´¢"/>
+				  <input type="button" value="È·¶¨"/>
+				  <input type="text"  size="8"value="" data-value="ÊäÈë¹Ø¼ü×Ö">
+					<input type="submit" value="ËÑË÷"/>
 
 				  
 				  
@@ -75,46 +75,46 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				  </h2>
 					<ul class="articles"><li><table width="99%" height="135" border="1" cellpadding="1" style="text-indent:35px">
 					  <tr style="background:url(images/w.jpg); height:36px; line-height:36px">
-    <td width="11%">é‡‘é¢</td>
-    <td width="30%">æ ‡é¢˜</td>
-    <td width="15%">æŠ•æ ‡</td>
-    <td width="18%">äº¤æ˜“æ–¹å¼</td>
-    <td width="26%">çŠ¶æ€</td>
+    <td width="11%">½ð¶î</td>
+    <td width="30%">±êÌâ</td>
+    <td width="15%">Í¶±ê</td>
+    <td width="18%">½»Ò×·½Ê½</td>
+    <td width="26%">×´Ì¬</td>
 					  </tr>
   <tr style="height:58px;">
-    <td>ï¿¥110</td>
-    <td><a href="article.jsp">æƒ…ä¾£LOGOè®¾è®¡</a></td>
+    <td>£¤110</td>
+    <td><a href="article.jsp">ÇéÂÂLOGOÉè¼Æ</a></td>
     <td>12</td>
-    <td>å…ˆäº¤ç¨¿</td>
-    <td>4å¤©åŽæˆªæ­¢äº¤ç¨¿</td>
+    <td>ÏÈ½»¸å</td>
+    <td>4Ììºó½ØÖ¹½»¸å</td>
   </tr>
   <tr style="height:58px; background:url(images/yi2.jpg);">
-    <td>ï¿¥3500</td>
-    <td><a href="article.jsp">æ—¶å°šä¼‘é—²å¥³è£…VIè®¾è®¡</a></td>
+    <td>£¤3500</td>
+    <td><a href="article.jsp">Ê±ÉÐÐÝÏÐÅ®×°VIÉè¼Æ</a></td>
     <td>2</td>
-    <td>å…ˆäº¤ç¨¿</td>
-    <td>24å¤©åŽæˆªæ­¢äº¤ç¨¿</td>
+    <td>ÏÈ½»¸å</td>
+    <td>24Ììºó½ØÖ¹½»¸å</td>
   </tr>
   <tr style="height:58px;">
-    <td>ï¿¥100</td>
-    <td><a href="article.jsp">äººç‰©å¡é€šå½¢è±¡è®¾è®¡</a></td>
+    <td>£¤100</td>
+    <td><a href="article.jsp">ÈËÎï¿¨Í¨ÐÎÏóÉè¼Æ</a></td>
     <td>15</td>
-    <td>å…ˆæŠ¥ä»·</td>
-    <td>9å¤©åŽæˆªæ­¢äº¤ç¨¿</td>
+    <td>ÏÈ±¨¼Û</td>
+    <td>9Ììºó½ØÖ¹½»¸å</td>
   </tr>
   <tr style="height:58px; background:url(images/yi2.jpg);">
-    <td>ï¿¥400</td>
-    <td><a href="article.jsp">ç½‘ç«™æ¨¡æ¿è®¾è®¡</a></td>
+    <td>£¤400</td>
+    <td><a href="article.jsp">ÍøÕ¾Ä£°åÉè¼Æ</a></td>
     <td>4</td>
-    <td>å…ˆæŠ•æ ‡</td>
-    <td>22å¤©åŽæˆªæ­¢äº¤ç¨¿</td>
+    <td>ÏÈÍ¶±ê</td>
+    <td>22Ììºó½ØÖ¹½»¸å</td>
   </tr>
  <tr style="height:58px;">
-    <td>ï¿¥300</td>
-    <td><a href="article.jsp">å°åŽ†è®¾è®¡</a></td>
+    <td>£¤300</td>
+    <td><a href="article.jsp">Ì¨ÀúÉè¼Æ</a></td>
     <td>6</td>
-    <td>å…ˆäº¤ç¨¿</td>
-    <td>6å¤©åŽæˆªæ­¢äº¤ç¨¿</td>
+    <td>ÏÈ½»¸å</td>
+    <td>6Ììºó½ØÖ¹½»¸å</td>
   </tr>
 </table>
 				      <br>

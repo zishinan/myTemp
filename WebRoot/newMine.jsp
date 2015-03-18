@@ -1,11 +1,11 @@
-<%@ page language="java" import="java.util.*,db.*,bean.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,db.*,bean.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 <%
 User u=(User)session.getAttribute("user"); 
-request.setCharacterEncoding("UTF-8");
+request.setCharacterEncoding("gbk");
 ControlCategory cc=new ControlCategory();
 ControlSmallcategory cn=new ControlSmallcategory();
 %>
@@ -13,7 +13,7 @@ ControlSmallcategory cn=new ControlSmallcategory();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>é¦–é¡µ</title>
+<title>Ê×Ò³</title>
 <meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -39,15 +39,15 @@ ControlSmallcategory cn=new ControlSmallcategory();
 <!--
 .STYLE1 {
 	font-size: large;
-	font-family: "æ¥·ä½“";
+	font-family: "¿¬Ìå";
 }
 .STYLE2 {
-	font-family: "æ–°å®‹ä½“";
+	font-family: "ĞÂËÎÌå";
 	font-size: x-large;
 	color: #FF9933;
 }
 .STYLE6 {
-	font-family: "å®‹ä½“";
+	font-family: "ËÎÌå";
 	font-size: x-large;
 	color: #0000FF;
 }
@@ -81,7 +81,7 @@ ControlSmallcategory cn=new ControlSmallcategory();
 <div class="category">
 <div class="list1">
 
-<div class="list1_cate"><span><a href="#">è®¾è®¡å¼€å‘</a></span></div>
+<div class="list1_cate"><span><a href="#">Éè¼Æ¿ª·¢</a></span></div>
 
 
 <div class="list1_left">
@@ -133,7 +133,7 @@ ControlSmallcategory cn=new ControlSmallcategory();
 </div>
 
 <div class="list2" style="border-bottom:none; border-top:none">
-<div class="list2_cate"><span><a href="#">æ¨å¹¿é…éŸ³</a></span></div>
+<div class="list2_cate"><span><a href="#">ÍÆ¹ãÅäÒô</a></span></div>
 <div class="list1_left">
 <ul>
 <li>
@@ -192,7 +192,7 @@ ControlSmallcategory cn=new ControlSmallcategory();
 </div>
 </div>
 <div class="list3" style="border-bottom:1px #dbdbdb solid">
-<div class="list3_cate"><span><a href="#">è£…ä¿®ç”Ÿæ´»</a></span></div>
+<div class="list3_cate"><span><a href="#">×°ĞŞÉú»î</a></span></div>
 <div class="list1_left">
 <ul>
 <li>
@@ -257,8 +257,8 @@ ControlSmallcategory cn=new ControlSmallcategory();
 </div>
 </tr>
 		   <tr>
-					<td height="30" colspan="2"><p>1000ä¸ªäº¤æ˜“æ­£åœ¨è¿›è¡Œ</p>
-					<!--JavaScriptéƒ¨åˆ†-->
+					<td height="30" colspan="2"><p>1000¸ö½»Ò×ÕıÔÚ½øĞĞ</p>
+					<!--JavaScript²¿·Ö-->
               <SCRIPT language=javascript>
 function secBoard(n)
 {
@@ -270,19 +270,19 @@ mainTable.tBodies[i].style.display="none";
 mainTable.tBodies[n].style.display="block";
 }
           </SCRIPT>
-              <!--HTMLéƒ¨åˆ†-->
+              <!--HTML²¿·Ö-->
 				    <TABLE width=100% border=0 cellPadding=0 cellSpacing=0 id=secTable>
 						<TBODY>
 						  <TR align=middle height=20>
-							<TD align="center" class=sec2 onclick=secBoard(0)>çƒ­é—¨æ¨è</TD>
-							<TD align="center" class=sec1 onclick=secBoard(1)>24å°æ—¶ä»»åŠ¡</TD>
-							<TD align="center" class=sec1 onclick=secBoard(2)>ç¾å…ƒä»»åŠ¡</TD>
-							<TD align="center" class=sec1 onclick=secBoard(3)>é«˜é‡‘é¢ä»»åŠ¡</TD>
+							<TD align="center" class=sec2 onclick=secBoard(0)>ÈÈÃÅÍÆ¼ö</TD>
+							<TD align="center" class=sec1 onclick=secBoard(1)>24Ğ¡Ê±ÈÎÎñ</TD>
+							<TD align="center" class=sec1 onclick=secBoard(2)>ÃÀÔªÈÎÎñ</TD>
+							<TD align="center" class=sec1 onclick=secBoard(3)>¸ß½ğ¶îÈÎÎñ</TD>
 						  </TR>
 						</TBODY>
 				   </TABLE>
 				   <TABLE class=main_tab id=mainTable cellSpacing=0 cellPadding=0 width=100% border=0>
-				   <!--å…³äºTBODYæ ‡è®°-->
+				   <!--¹ØÓÚTBODY±ê¼Ç-->
                 <TBODY style="DISPLAY: block">
                   <TR>
                     <TD vAlign=top align=middle><TABLE width=98% height="35" border=0 align="center" cellPadding=0 cellSpacing=0>
@@ -292,8 +292,8 @@ mainTable.tBodies[n].style.display="block";
                           </TR>
                           <TR>
                             <TD width="0%" bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD width="11%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯å•†å®¶å±•</TD>
-                            <TD width="71%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯ç½‘ä¸Šå•†åŸ</TD>
+                            <TD width="11%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÉÌ¼ÒÕ¹</TD>
+                            <TD width="71%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÍøÉÏÉÌ³Ç</TD>
 							<td width="18%" height="25" bgcolor="#FAFBFC"><div align="center"><img src="images/shouye5.jpg"></div></td>
                           </TR>
                           <TR>
@@ -303,7 +303,7 @@ mainTable.tBodies[n].style.display="block";
                     </TABLE></TD>
                   </TR>
                 </TBODY>
-				<!--å…³äºcellsé›†åˆ-->
+				<!--¹ØÓÚcells¼¯ºÏ-->
                 <TBODY style="DISPLAY: none">
                   <TR>
                     <TD vAlign=top align=middle><TABLE width=98% height="4" border=0 align="center" cellPadding=0 cellSpacing=0>
@@ -313,8 +313,8 @@ mainTable.tBodies[n].style.display="block";
                           </TR>
                           <TR>
                             <TD width="2%" bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD width="44%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯å•†å®¶å±•</TD>
-                            <TD width="54%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯ç½‘ä¸Šå•†åŸ</TD>
+                            <TD width="44%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÉÌ¼ÒÕ¹</TD>
+                            <TD width="54%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÍøÉÏÉÌ³Ç</TD>
                           </TR>
                           <TR>
                             <TD height="3" colspan="3"></TD>
@@ -323,7 +323,7 @@ mainTable.tBodies[n].style.display="block";
                     </TABLE></TD>
                   </TR>
                 </TBODY>
-				<!--å…³äºtBodiesé›†åˆ-->
+				<!--¹ØÓÚtBodies¼¯ºÏ-->
                 <TBODY style="DISPLAY: none">
                   <TR>
                     <TD vAlign=top align=middle><TABLE width=98% border=0 align="center" cellPadding=0 cellSpacing=0>
@@ -336,8 +336,8 @@ mainTable.tBodies[n].style.display="block";
                           </TR>
                           <TR>
                             <TD width="2%" bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD width="44%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯å•†å®¶å±•</TD>
-                            <TD width="54%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯ç½‘ä¸Šå•†åŸ</TD>
+                            <TD width="44%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÉÌ¼ÒÕ¹</TD>
+                            <TD width="54%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÍøÉÏÉÌ³Ç</TD>
                           </TR>
                           <TR>
                             <TD height="3" colspan="3"></TD>
@@ -346,7 +346,7 @@ mainTable.tBodies[n].style.display="block";
                     </TABLE></TD>
                   </TR>
                 </TBODY>
-				<!--å…³äºdisplayå±æ€§-->
+				<!--¹ØÓÚdisplayÊôĞÔ-->
                 <TBODY style="DISPLAY: none">
                   <TR>
                     <TD vAlign=top align=middle><TABLE width=98% border=0 align="center" cellPadding=0 cellSpacing=0>
@@ -359,8 +359,8 @@ mainTable.tBodies[n].style.display="block";
                           </TR>
                           <TR>
                             <TD width="2%" bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD width="44%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯å•†å®¶å±•</TD>
-                            <TD width="54%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯ç½‘ä¸Šå•†åŸ</TD>
+                            <TD width="44%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÉÌ¼ÒÕ¹</TD>
+                            <TD width="54%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÍøÉÏÉÌ³Ç</TD>
                           </TR>
                           <TR>
                             <TD height="3" colspan="3"></TD>
@@ -376,7 +376,7 @@ mainTable.tBodies[n].style.display="block";
 				</td>
 			  	<td width="2%"></td>
                 <td width="28%">
-					<!--JavaScriptéƒ¨åˆ†-->
+					<!--JavaScript²¿·Ö-->
                         <SCRIPT language=javascript>
 function secBoard1(n)
 {
@@ -388,19 +388,19 @@ mainTable1.tBodies[i].style.display="none";
 mainTable1.tBodies[n].style.display="block";
 }
           </SCRIPT>
-              <!--HTMLéƒ¨åˆ†-->
+              <!--HTML²¿·Ö-->
 				    <TABLE width=100% border=0 cellPadding=0 cellSpacing=0 id=secTable1>
 						<TBODY>
 						  <TR align=middle height=20>
-							<TD align="center" class=sec2 onclick=secBoard(0)>å…¬å‘Š</TD>
-							<TD align="center" class=sec1 onclick=secBoard(1)>è§„åˆ™</TD>
-							<TD align="center" class=sec1 onclick=secBoard(2)>æç°</TD>
-							<TD align="center" class=sec1 onclick=secBoard(3)>äº¤æ˜“å®‰å…¨</TD>
+							<TD align="center" class=sec2 onclick=secBoard(0)>¹«¸æ</TD>
+							<TD align="center" class=sec1 onclick=secBoard(1)>¹æÔò</TD>
+							<TD align="center" class=sec1 onclick=secBoard(2)>ÌáÏÖ</TD>
+							<TD align="center" class=sec1 onclick=secBoard(3)>½»Ò×°²È«</TD>
 						  </TR>
 						</TBODY>
 				   </TABLE>
 				   <TABLE class=main_tab id=mainTable1 cellSpacing=0 cellPadding=0 width=100% border=0>
-				   <!--å…³äºTBODYæ ‡è®°-->
+				   <!--¹ØÓÚTBODY±ê¼Ç-->
                 <TBODY style="DISPLAY: block">
                   <TR>
                     <TD vAlign=top align=middle><TABLE width=98% height="35" border=0 align="center" cellPadding=0 cellSpacing=0>
@@ -409,7 +409,7 @@ mainTable1.tBodies[n].style.display="block";
                             <TD height="1"></TD>
                           </TR>
                           <TR>
-                            <TD height="200" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯å•†å®¶å±•æ‚¨æœ‰æœªéªŒè¯ç½‘ä¸Šå•†åŸ</TD>
+                            <TD height="200" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÉÌ¼ÒÕ¹ÄúÓĞÎ´ÑéÖ¤ÍøÉÏÉÌ³Ç</TD>
                           </TR>
                           <TR>
                             <TD height="3"></TD>
@@ -418,7 +418,7 @@ mainTable1.tBodies[n].style.display="block";
                     </TABLE></TD>
                   </TR>
                 </TBODY>
-				<!--å…³äºcellsé›†åˆ-->
+				<!--¹ØÓÚcells¼¯ºÏ-->
                 <TBODY style="DISPLAY: none">
                   <TR>
                     <TD vAlign=top align=middle><TABLE width=98% height="4" border=0 align="center" cellPadding=0 cellSpacing=0>
@@ -427,7 +427,7 @@ mainTable1.tBodies[n].style.display="block";
                             <TD height="1"></TD>
                           </TR>
                           <TR>
-                            <TD height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯å•†å®¶å±•æ‚¨æœ‰æœªéªŒè¯ç½‘ä¸Šå•†åŸ</TD>
+                            <TD height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÉÌ¼ÒÕ¹ÄúÓĞÎ´ÑéÖ¤ÍøÉÏÉÌ³Ç</TD>
                            </TR>
                           <TR>
                             <TD height="3"></TD>
@@ -436,7 +436,7 @@ mainTable1.tBodies[n].style.display="block";
                     </TABLE></TD>
                   </TR>
                 </TBODY>
-				<!--å…³äºtBodiesé›†åˆ-->
+				<!--¹ØÓÚtBodies¼¯ºÏ-->
                 <TBODY style="DISPLAY: none">
                   <TR>
                     <TD vAlign=top align=middle><TABLE width=98% border=0 align="center" cellPadding=0 cellSpacing=0>
@@ -448,7 +448,7 @@ mainTable1.tBodies[n].style.display="block";
                             <TD height="1"></TD>
                           </TR>
                           <TR>
-                            <TD height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯å•†å®¶å±•æ‚¨æœ‰æœªéªŒè¯ç½‘ä¸Šå•†åŸ</TD>
+                            <TD height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÉÌ¼ÒÕ¹ÄúÓĞÎ´ÑéÖ¤ÍøÉÏÉÌ³Ç</TD>
                           </TR>
                           <TR>
                             <TD height="3"></TD>
@@ -457,7 +457,7 @@ mainTable1.tBodies[n].style.display="block";
                     </TABLE></TD>
                   </TR>
                 </TBODY>
-				<!--å…³äºdisplayå±æ€§-->
+				<!--¹ØÓÚdisplayÊôĞÔ-->
                 <TBODY style="DISPLAY: none">
                   <TR>
                     <TD vAlign=top align=middle><TABLE width=98% border=0 align="center" cellPadding=0 cellSpacing=0>
@@ -469,7 +469,7 @@ mainTable1.tBodies[n].style.display="block";
                             <TD height="1"></TD>
                           </TR>
                           <TR>
-                            <TD height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯å•†å®¶å±•æ‚¨æœ‰æœªéªŒè¯ç½‘ä¸Šå•†åŸ</TD>
+                            <TD height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÉÌ¼ÒÕ¹ÄúÓĞÎ´ÑéÖ¤ÍøÉÏÉÌ³Ç</TD>
                           </TR>
                           <TR>
                             <TD height="3"></TD>
@@ -480,15 +480,15 @@ mainTable1.tBodies[n].style.display="block";
                 </TBODY>
 				   </TABLE>
                    <div style="background:#f0f0f0; border:1px #CCC solid; margin-top:15px">
-                   <div><span style="color:#000; font-size:14px; font-weight:bold; line-height:40px; margin-left:15px">çƒ­é—¨æ´»åŠ¨</span><span style="font-size:12px; float:right; line-height:40px; margin-right:15px"><a href="#" style="color:#999">æ›´å¤š>></a></span></div>
+                   <div><span style="color:#000; font-size:14px; font-weight:bold; line-height:40px; margin-left:15px">ÈÈÃÅ»î¶¯</span><span style="font-size:12px; float:right; line-height:40px; margin-right:15px"><a href="#" style="color:#999">¸ü¶à>></a></span></div>
                    <div style=" margin:0 15px"><img src="images/delu.jpg" width="230px"></div>
-                   <div style="margin:10px 15px"><a href="#"><p style="margin-bottom:0">ç”¨æ‰‹æœºå®¢æˆ·ç«¯å‘ä»»åŠ¡,é€æ‚¨äººç‰©å¤§ç¤¼åŒ…!<span style="color:#999">2012/04/07</span></p></a>
-                   <a href="#"><p style="margin-bottom:0; color:#000">ç‚¹å¿ƒå¯¼èˆªç½‘ç«™å…¨æ°‘äº’åŠ¨è¥é”€å¤§èµ›<span style="color:#999">2012/04/06</span></p></a>
-                   <a href="#"><p style="margin-bottom:0; color:#000">å…¨çƒå…¬æµ‹ä¸€æœåŠ¡å•†è¯„æµ‹æŠ¥åé€šé“å¼€é€š<span style="color:#999">2012/03/13</span></p></a>
+                   <div style="margin:10px 15px"><a href="#"><p style="margin-bottom:0">ÓÃÊÖ»ú¿Í»§¶Ë·¢ÈÎÎñ,ËÍÄúÈËÎï´óÀñ°ü!<span style="color:#999">2012/04/07</span></p></a>
+                   <a href="#"><p style="margin-bottom:0; color:#000">µãĞÄµ¼º½ÍøÕ¾È«Ãñ»¥¶¯ÓªÏú´óÈü<span style="color:#999">2012/04/06</span></p></a>
+                   <a href="#"><p style="margin-bottom:0; color:#000">È«Çò¹«²âÒ»·şÎñÉÌÆÀ²â±¨ÃûÍ¨µÀ¿ªÍ¨<span style="color:#999">2012/03/13</span></p></a>
                    </div>
                    </div>
                    <div style="background:#f0f0f0; border:1px #CCC solid; margin-top:15px">
-                   <div><span style="color:#000; font-size:14px; font-weight:bold; line-height:40px; margin-left:15px">å“ç‰Œäº¤æ˜“</span><span style=" float:right; margin-top:12px; margin-right:15px;"><a href="#"><img src="images/xia.gif" style="margin-right:2px"></a><a href="#"><img src="images/shang.gif"></a></span></div>
+                   <div><span style="color:#000; font-size:14px; font-weight:bold; line-height:40px; margin-left:15px">Æ·ÅÆ½»Ò×</span><span style=" float:right; margin-top:12px; margin-right:15px;"><a href="#"><img src="images/xia.gif" style="margin-right:2px"></a><a href="#"><img src="images/shang.gif"></a></span></div>
                    <div>
                    <style type="text/css">
 				   .scroll li{border-top:1px #ccc solid; background:#fff; line-height:51px}
@@ -496,9 +496,9 @@ mainTable1.tBodies[n].style.display="block";
 				   .scroll a{color:#000}
 				   </style>
                    <ul class="scroll">
-                   <li><a href="#"><img src="images/pp1.gif"><span>ï¿¥3000</span>äº”ç²®æ¶²ç”µè§†</a></li>
-                   <li><a href="#"><img src="images/pp2.gif"><span>ï¿¥3000</span>é˜¿ç‹¸åŒ…åŒ…åˆ›æ„è®¾è®¡</a></li>
-                   <li><a href="#"><img src="images/pp3.gif"><span>ï¿¥12500</span>ç‘æ˜Ÿè½¯ä»¶ä¸‹è½½æ´»åŠ¨</a></li>
+                   <li><a href="#"><img src="images/pp1.gif"><span>£¤3000</span>ÎåÁ¸ÒºµçÊÓ</a></li>
+                   <li><a href="#"><img src="images/pp2.gif"><span>£¤3000</span>°¢Àê°ü°ü´´ÒâÉè¼Æ</a></li>
+                   <li><a href="#"><img src="images/pp3.gif"><span>£¤12500</span>ÈğĞÇÈí¼şÏÂÔØ»î¶¯</a></li>
                    </ul>
                    </div>
                    </div>

@@ -20,7 +20,7 @@ public class NewhuiyuanServlet extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		request.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding("gbk");
 		String userName=request.getParameter("username");
 		String pwd=request.getParameter("pwd");
 		String realName=request.getParameter("realname");

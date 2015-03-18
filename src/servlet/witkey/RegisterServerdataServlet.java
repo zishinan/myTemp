@@ -19,7 +19,7 @@ public class RegisterServerdataServlet extends HttpServlet
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException
 	{
-		request.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding("gbk");
 		
 		User u=(User)request.getAttribute("user"); 
 		//String userName=u.getUserName();

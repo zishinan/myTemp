@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*,db.*,bean.*"
-	pageEncoding="UTF-8"%>
+	pageEncoding="gbk"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -8,7 +8,7 @@
 %>
 <%
 	User u = (User) session.getAttribute("user");
-	request.setCharacterEncoding("UTF-8");
+	request.setCharacterEncoding("gbk");
 	ControlCategory cc = new ControlCategory();
 	ControlSmallcategory cn = new ControlSmallcategory();
 %>
@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>И╕√И║╣</title>
+<title>йврЁ</title>
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -42,17 +42,17 @@
 <!--
 .STYLE1 {
 	font-size: large;
-	font-family: "Ф╔╥Д╫⌠";
+	font-family: "©╛лЕ";
 }
 
 .STYLE2 {
-	font-family: "Ф√╟Е╝▀Д╫⌠";
+	font-family: "пбкнлЕ";
 	font-size: x-large;
 	color: #FF9933;
 }
 
 .STYLE6 {
-	font-family: "Е╝▀Д╫⌠";
+	font-family: "кнлЕ";
 	font-size: x-large;
 	color: #0000FF;
 }
@@ -94,9 +94,9 @@
 				style="background: #f0f0f0; border: 1px #CCC solid; margin-top: 15px">
 				<div>
 					<span
-						style="color: #000; font-size: 14px; font-weight: bold; line-height: 40px; margin-left: 15px">Ф▌╗Х█░Д╩╩Е┼║</span><span
+						style="color: #000; font-size: 14px; font-weight: bold; line-height: 40px; margin-left: 15px">мф╪ЖхннЯ</span><span
 						style="font-size: 12px; float: right; line-height: 40px; margin-right: 15px"><a
-						href="newTasks.jsp" style="color: #999">Ф⌡╢Е╓ >></a></span>
+						href="newTasks.jsp" style="color: #999">╦Э╤Ю>></a></span>
 				</div>
 				<div style="margin: 0 15px">
 					<img src="images/delu.jpg" width="230px">

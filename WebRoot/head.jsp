@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*,db.*,bean.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,db.*,bean.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -7,14 +7,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html lang="en">
 
 <%
-request.setCharacterEncoding("UTF-8");
+request.setCharacterEncoding("gbk");
 User u=(User)session.getAttribute("user"); 
 ControlCategory cc=new ControlCategory();
 ControlSmallcategory cn=new ControlSmallcategory();
 %>
 
 <head>
-<title>È¶ñÈ°µ</title>
+<title> ◊“≥</title>
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -40,15 +40,15 @@ ControlSmallcategory cn=new ControlSmallcategory();
 <!--
 .STYLE1 {
 	font-size: large;
-	font-family: "Ê•∑‰Ωì";
+	font-family: "ø¨ÃÂ";
 }
 .STYLE2 {
-	font-family: "Êñ∞ÂÆã‰Ωì";
+	font-family: "–¬ÀŒÃÂ";
 	font-size: x-large;
 	color: #FF9933;
 }
 .STYLE6 {
-	font-family: "ÂÆã‰Ωì";
+	font-family: "ÀŒÃÂ";
 	font-size: x-large;
 	color: #0000FF;
 }
@@ -71,27 +71,27 @@ ControlSmallcategory cn=new ControlSmallcategory();
 	    		    		{
 	    		    	%>
 	    		    	<li><a href="userDetailServlet"><%=u.getUserName() %></a></li>
-	    		    	<li><a href="logoutServlet">ÂàáÊç¢Â∏êÂè∑</a></li>
+	    		    	<li><a href="logoutServlet">«–ªª’ ∫≈</a></li>
 	    		    	
 	    		
 	    		
 	    		<%}else{%>
-	    		<li><a href="logon.jsp">ÂÖçË¥πÊ≥®ÂÜå</a></li>
+	    		<li><a href="logon.jsp">√‚∑—◊¢≤·</a></li>
 	    		
-				<li><a href="enter.jsp">ÁôªÂΩï</a></li>
+				<li><a href="enter.jsp">µ«¬º</a></li>
 					
 				<%} %>
 					</ul>
 					<ul>
-						<li class="current"><a href="index.jsp">È¶ñÈ°µ</a></li>
-						<li><a href="article.html">Java</a></li>
-						<li><a href="contact-us.html">C#</a></li>
-						<li><a href="task.jsp">C++</a></li>
-						<li><a href="sitemap.jsp">C</a></li>
-						<li><a href="sitemap.jsp">Python</a></li>
-						<li><a href="sitemap.jsp">Android</a></li>
-						<li><a href="sitemap.jsp">Lua</a></li>
-						<li><a href="sitemap.jsp">VB</a></li>
+						<li class="current"><a href="index.jsp"> ◊“≥</a></li>
+						<li><a href="index.jsp?cat=1">Java</a></li>
+						<li><a href="index.jsp?cat=2">C#</a></li>
+						<li><a href="index.jsp?cat=3">C++</a></li>
+						<li><a href="index.jsp?cat=4">C</a></li>
+						<li><a href="index.jsp?cat=5">Python</a></li>
+						<li><a href="index.jsp?cat=6">Android</a></li>
+						<li><a href="index.jsp?cat=7">Lua</a></li>
+						<li><a href="index.jsp?cat=8">VB</a></li>
 					</ul>
 				</nav>
 			</div>

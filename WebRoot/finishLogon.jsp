@@ -1,21 +1,21 @@
-<%@ page language="java" import="java.util.*,db.*,bean.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,db.*,bean.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 <%
 User u=(User)session.getAttribute("user"); 
-request.setCharacterEncoding("UTF-8");
+request.setCharacterEncoding("gbk");
 %>
 <!DOCTYPE html>
 <jsp:include page="head.jsp"></jsp:include>
 <html lang="en">
 <head>
-<title>会员注册页面</title>
+<title>��Աע��ҳ��</title>
 <meta name="description" content="Place your description here">
 <meta name="keywords" content="put, your, keyword, here">
 <meta name="author" content="cssMoban.com - website templates provider">
-<meta charset="utf-8">
+<meta charset="gbk">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -35,7 +35,7 @@ request.setCharacterEncoding("UTF-8");
 <!--
 .STYLE2 {color: #000000}
 .STYLE3 {
-	font-family: "微软雅黑";
+	font-family: "΢���ź�";
 	color: #000000;
 	font-size: 24px;
 }
@@ -49,10 +49,10 @@ request.setCharacterEncoding("UTF-8");
 								<table width="100%">
 									  <tr>
 									   <td height="33" colspan="3">
-									    <div align="center"><span class="STYLE3"><img src="images/p2.jpg" width="41" height="43">恭喜！注册成功</span>
+									    <div align="center"><span class="STYLE3"><img src="images/p2.jpg" width="41" height="43">��ϲ��ע��ɹ�</span>
 								         </div>
 									    <p align="center">
-									   您在软件服务外包网的帐号为 <%=u.getUserId() %><%=u.getUserName() %>，请妥善保管好。您现在可以：
+									   ��������������������ʺ�Ϊ <%=u.getUserId() %><%=u.getUserName() %>�������Ʊ��ܺá������ڿ��ԣ�
 									   </p>
 									    <div align="center"><img src="images/p5.jpg">
 							             </div></td>

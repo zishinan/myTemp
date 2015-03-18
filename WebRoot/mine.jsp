@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -8,7 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <jsp:include page="head.jsp"></jsp:include>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>鎴戠殑杞欢鏈嶅姟澶栧寘</title>
+<title>我的软件服务外包</title>
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 <SCRIPT language=javascript>

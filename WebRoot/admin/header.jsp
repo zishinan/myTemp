@@ -1,6 +1,6 @@
 <%@ page language="java" import="java.util.*,db.*,bean.*" pageEncoding="gbk"%>
 <%
-request.setCharacterEncoding("UTF-8");
+request.setCharacterEncoding("gbk");
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 User u=(User)session.getAttribute("user"); 

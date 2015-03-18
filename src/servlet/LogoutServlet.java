@@ -21,7 +21,7 @@ public class LogoutServlet extends HttpServlet
 			throws ServletException, IOException
 	{
 		System.out.println("logout");
-		request.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding("gbk");
 		HttpSession session = request.getSession();
 		session.setAttribute("user", null);
 		response.sendRedirect("enter.jsp");

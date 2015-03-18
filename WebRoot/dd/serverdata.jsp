@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*,bean.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,bean.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -6,16 +6,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 User u=(User)session.getAttribute("user"); 
 System.out.print("ss"+u.getUserName());
 
-//System.out.print("è·å¾—åå­—"+request.getParameter("userName"));
+//System.out.print("»ñµÃÃû×Ö"+request.getParameter("userName"));
 %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>æˆ‘çš„è½¯ä»¶æœåŠ¡å¤–åŒ…</title>
+<title>ÎÒµÄÈí¼ş·şÎñÍâ°ü</title>
 <meta name="description" content="Place your description here">
 <meta name="keywords" content="put, your, keyword, here">
 <meta name="author" content="cssMoban.com - website templates provider">
-<meta charset="utf-8">
+<meta charset="gbk">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -58,68 +58,68 @@ System.out.print("ss"+u.getUserName());
 <form name="form1" method="post" action="<%=basePath  %>servlet/RegisterServerdataServlet?userName=<%=u.getUserName() %>">
     <table width="100%" border="1">
       <tr>
-        <td colspan="2">.åŸºç¡€ä¿¡æ¯</td>
+        <td colspan="2">.»ù´¡ĞÅÏ¢</td>
       </tr>
       <tr>
         <td width="2%">&nbsp;</td>
-        <td width="98%">æ‚¨çš„èº«ä»½ï¼š</td>
+        <td width="98%">ÄúµÄÉí·İ£º</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
         <td>
           <input type="radio" name="serverState" value="0">
-          ä¸ªäºº
+          ¸öÈË
 		 &nbsp;
 		  <input type="radio" name="serverState" value="1">
-		  ä¸ªä½“ç»è¥
+		  ¸öÌå¾­Óª
 		 &nbsp;
 		 <input type="radio" name="serverState" value="2">
-		 ä¼ä¸š		</td>
+		 ÆóÒµ		</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td>çœŸå®å§“åï¼š</td>
+        <td>ÕæÊµĞÕÃû£º</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
         <td>
-		<input name="realName" type="text" id="realName" value="è¯·è¾“å…¥çœŸå®å§“åã€‚">
+		<input name="realName" type="text" id="realName" value="ÇëÊäÈëÕæÊµĞÕÃû¡£">
 		&nbsp;
 		<select name="sex">
-		  <option value="1">å…ˆç”Ÿ</option>
-		  <option value="2">å¥³å£«</option>
+		  <option value="1">ÏÈÉú</option>
+		  <option value="2">Å®Ê¿</option>
 		</select>		</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td>å“ç‰Œåç§°ï¼š</td>
+        <td>Æ·ÅÆÃû³Æ£º</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td><input name="serverName" type="text" value="ç»™ä½ çš„åº—é“ºå–ä¸€ä¸ªç®€å•ï¼Œå“äº®çš„åå­—ã€‚" size="50"></td>
+        <td><input name="serverName" type="text" value="¸øÄãµÄµêÆÌÈ¡Ò»¸ö¼òµ¥£¬ÏìÁÁµÄÃû×Ö¡£" size="50"></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td>åº—é“ºä»‹ç»ï¼š</td>
+        <td>µêÆÌ½éÉÜ£º</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
         <td><textarea name="serverNote" cols="100" rows="5"></textarea></td>
       </tr>
       <tr>
-        <td colspan="2">.è”ç³»æ–¹å¼</td>
+        <td colspan="2">.ÁªÏµ·½Ê½</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td>æ‚¨çš„ä½ç½®:</td>
+        <td>ÄúµÄÎ»ÖÃ:</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td><input name="userAddress" type="text" value="æ‚¨çš„è¯¦ç»†åœ°å€" size="50"></td>
+        <td><input name="userAddress" type="text" value="ÄúµÄÏêÏ¸µØÖ·" size="50"></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td>ç”µå­é‚®ç®±ï¼š</td>
+        <td>µç×ÓÓÊÏä£º</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
@@ -127,7 +127,7 @@ System.out.print("ss"+u.getUserName());
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td>è”ç³»ç”µè¯ï¼š</td>
+        <td>ÁªÏµµç»°£º</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
@@ -135,7 +135,7 @@ System.out.print("ss"+u.getUserName());
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td><input name="æäº¤" type="submit" value="æäº¤"></td>
+        <td><input name="Ìá½»" type="submit" value="Ìá½»"></td>
       </tr>
       <tr>
         <td>&nbsp;</td>

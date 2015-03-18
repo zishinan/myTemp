@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -7,7 +7,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>å·¦å¯¼èˆªæ </title>
+<title>×óµ¼º½À¸</title>
 <script src="js/prototype.lite.js" type="text/javascript"></script>
 <script src="js/moo.fx.js" type="text/javascript"></script>
 <script src="js/moo.fx.pack.js" type="text/javascript"></script>
@@ -147,7 +147,7 @@ H1 a {
   <tr>
     <td width="182" valign="top">
 	<div id="container">
-      <h1 class="type"><a href="javascript:void(0)">æˆ‘çš„è½¯ä»¶æœåŠ¡å¤–åŒ…hrefæ²¡æ”¹</a></h1>
+      <h1 class="type"><a href="javascript:void(0)">ÎÒµÄÈí¼þ·þÎñÍâ°ührefÃ»¸Ä</a></h1>
       <div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
@@ -155,16 +155,16 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="http://www.865171.cn" target="main">å‘å¸ƒéœ€æ±‚</a></li>
-          <li><a href="http://www.865171.cn" target="main">å‘å¸ƒéœ€æ±‚</a></li>
-          <li><a href="mine_right.jsp" target="main">å‘å¸ƒéœ€æ±‚</a></li>
-          <li><a href="http://www.865171.cn" target="main">å‘ç¥¨ç®¡ç†</a></li>
-          <li><a href="http://www.865171.cn" target="main">è¯„ä»·ç®¡ç†</a></li>
-          <li><a href="http://www.865171.cn" target="main">ç»´æƒç®¡ç†</a></li>
-          <li><a href="http://www.865171.cn" target="main">æ”¯ä»˜è´¦æˆ·ç®¡ç†</a></li>
+          <li><a href="http://www.865171.cn" target="main">·¢²¼ÐèÇó</a></li>
+          <li><a href="http://www.865171.cn" target="main">·¢²¼ÐèÇó</a></li>
+          <li><a href="mine_right.jsp" target="main">·¢²¼ÐèÇó</a></li>
+          <li><a href="http://www.865171.cn" target="main">·¢Æ±¹ÜÀí</a></li>
+          <li><a href="http://www.865171.cn" target="main">ÆÀ¼Û¹ÜÀí</a></li>
+          <li><a href="http://www.865171.cn" target="main">Î¬È¨¹ÜÀí</a></li>
+          <li><a href="http://www.865171.cn" target="main">Ö§¸¶ÕË»§¹ÜÀí</a></li>
         </ul>
       </div>
-      <h1 class="type"><a href="javascript:void(0)">æœåŠ¡å•†ä¸­å¿ƒ</a></h1>
+      <h1 class="type"><a href="javascript:void(0)">·þÎñÉÌÖÐÐÄ</a></h1>
       <div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
@@ -172,15 +172,15 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="http://www.865171.cn" target="main">æˆ‘è¦å–</a></li>
-          <li><a href="http://www.865171.cn" target="main">æˆ‘çš„å…³æ³¨</a></li>
-          <li><a href="dd/serverdata.jsp" target="main">åº—é“ºèµ„æ–™</a></li>
-          <li><a href="http://www.865171.cn" target="main">æ“…é•¿æŠ€èƒ½</a></li>
-          <li><a target="main" href="http://www.865171.cn">å‡ºå”®çš„æœåŠ¡</a></li>
-          <li><a href="http://www.865171.cn" target="main">è¯„ä»·ç®¡ç†</a></li>
+          <li><a href="http://www.865171.cn" target="main">ÎÒÒªÂô</a></li>
+          <li><a href="http://www.865171.cn" target="main">ÎÒµÄ¹Ø×¢</a></li>
+          <li><a href="dd/serverdata.jsp" target="main">µêÆÌ×ÊÁÏ</a></li>
+          <li><a href="http://www.865171.cn" target="main">ÉÃ³¤¼¼ÄÜ</a></li>
+          <li><a target="main" href="http://www.865171.cn">³öÊÛµÄ·þÎñ</a></li>
+          <li><a href="http://www.865171.cn" target="main">ÆÀ¼Û¹ÜÀí</a></li>
         </ul>
       </div>
-      <h1 class="type"><a href="javascript:void(0)">è´¦å·è®¾ç½®</a></h1>
+      <h1 class="type"><a href="javascript:void(0)">ÕËºÅÉèÖÃ</a></h1>
       <div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
@@ -188,11 +188,11 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-		  <li><a href="http://www.865171.cn" target="main">åŸºæœ¬èµ„æ–™</a></li>
-          <li><a href="http://www.865171.cn" target="main">ä¿®æ”¹ç™»å½•å¯†ç </a></li>
+		  <li><a href="http://www.865171.cn" target="main">»ù±¾×ÊÁÏ</a></li>
+          <li><a href="http://www.865171.cn" target="main">ÐÞ¸ÄµÇÂ¼ÃÜÂë</a></li>
         </ul>
       </div>
-      <h1 class="type"><a href="javascript:void(0)">æ¶ˆæ¯ç®¡ç†</a></h1>
+      <h1 class="type"><a href="javascript:void(0)">ÏûÏ¢¹ÜÀí</a></h1>
       <div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
@@ -200,9 +200,9 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="http://www.865171.cn" target="main">é€šçŸ¥</a></li>
-          <li><a href="http://www.865171.cn" target="main">æ¶ˆæ¯</a></li>
-          <li><a href="http://www.865171.cn" target="main">é€šçŸ¥è®¾ç½®</a></li>
+          <li><a href="http://www.865171.cn" target="main">Í¨Öª</a></li>
+          <li><a href="http://www.865171.cn" target="main">ÏûÏ¢</a></li>
+          <li><a href="http://www.865171.cn" target="main">Í¨ÖªÉèÖÃ</a></li>
         </ul>
       </div>
     </div>

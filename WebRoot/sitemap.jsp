@@ -1,4 +1,4 @@
-ï»¿<%@ page language="java" import="java.util.*,bean.*,db.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*,bean.*,db.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -20,11 +20,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="css1/chili.css" />
 	<link rel="stylesheet" type="text/css" href="css1/screen.css" />
 	<link rel="stylesheet" type="text/css" href="css1/index.css">
-<title>æŠ•æ ‡å†…å®¹æ˜¾ç¤ºhref172</title>
+<title>Í¶±êÄÚÈİÏÔÊ¾href172</title>
 <meta name="description" content="Place your description here">
 <meta name="keywords" content="put, your, keyword, here">
 <meta name="author" content="cssMoban.com - website templates provider">
-<meta charset="utf-8">
+<meta charset="gbk">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style1.css" type="text/css" media="all">
@@ -69,26 +69,26 @@ aside{float:left; width:261px}
           <section id="content">
             <div class="inside">
               <h2><span><%=t.getMoney() %></span><%=t.getTitle() %></h2><span style="float:right">
-                <input name="buttontop" type="button"  value="ä¸Šä¸€ä¸ª">
+                <input name="buttontop" type="button"  value="ÉÏÒ»¸ö">
                 48/50
-                <input name="buttonbottom" type="button" value="ä¸‹ä¸€ä¸ª">
+                <input name="buttonbottom" type="button" value="ÏÂÒ»¸ö">
               </span>
-              <p style="font:15px å¾®è½¯é›…é»‘"><span>æ‚¨æ­£åœ¨æŸ¥çœ‹<%=b.getBidId() %>å·ç¨¿ä»¶</span> </p>
+              <p style="font:15px Î¢ÈíÑÅºÚ"><span>ÄúÕıÔÚ²é¿´<%=b.getBidId() %>ºÅ¸å¼ş</span> </p>
               <p>
               <img name="picture" src="" ></p>
-              <p>å¸Œæœ›æ‚¨èƒ½å–œæ¬¢</p>
-              <p class="p0"><%=b.getServerName() %> æäº¤äº <%=b.getTime() %> ç¼–å·ï¼š<%=b.getBidId() %> 
+              <p>Ï£ÍûÄúÄÜÏ²»¶</p>
+              <p class="p0"><%=b.getServerName() %> Ìá½»ÓÚ <%=b.getTime() %> ±àºÅ£º<%=b.getBidId() %> 
               <%if(b.isChoose()==true){ %>
-              ä¹°å®¶å·²é€šè¿‡
+              Âò¼ÒÒÑÍ¨¹ı
               <%}else{ %>
-              ä¹°å®¶å·²æ‹’ç»
+              Âò¼ÒÒÑ¾Ü¾ø
               <%} %>
-               ä¸¾æŠ¥ | åˆ†äº«</p>
+               ¾Ù±¨ | ·ÖÏí</p>
               <p></p>
-              <p style="font:17px  å®‹ä½“; font-weight:bold">ç¨¿ä»¶ç‚¹è¯„</p>
+              <p style="font:17px  ËÎÌå; font-weight:bold">¸å¼şµãÆÀ</p>
 			<form action="<%=basePath %>/servlet/LeaveMassgeServlet" method="post">
-				<textarea name="message" cols="50" rows="1" id="shuru" style="overflow:hidden">æˆ‘æ¥è¯´ä¸¤å¥.</textarea>
-				<input id="tijiao" type="submit" value="æäº¤" style="display:none" />
+				<textarea name="message" cols="50" rows="1" id="shuru" style="overflow:hidden">ÎÒÀ´ËµÁ½¾ä.</textarea>
+				<input id="tijiao" type="submit" value="Ìá½»" style="display:none" />
 			    <input name="bidId" type="hidden" id="bidId" value="<%=b.getBidId() %>">
 			</form>
 <script type="text/javascript">
@@ -97,12 +97,12 @@ tijiao=document.getElementById('tijiao')
 document.getElementById('shuru').onfocus=shuru_focus
 document.getElementById('shuru').onblur=shuru_blur
 function shuru_focus(){
-	if(shuru.value=='æˆ‘æ¥è¯´ä¸¤å¥.'){shuru.value=''
+	if(shuru.value=='ÎÒÀ´ËµÁ½¾ä.'){shuru.value=''
 	shuru.cols='50'
 	shuru.rows='6'
 	tijiao.style.display='block'}}
 function shuru_blur(){
-	if(shuru.value==''){shuru.value='æˆ‘æ¥è¯´ä¸¤å¥.'
+	if(shuru.value==''){shuru.value='ÎÒÀ´ËµÁ½¾ä.'
 	shuru.cols='50'
 	shuru.rows='1'
 	tijiao.style.display='none'}}
@@ -113,52 +113,52 @@ function shuru_blur(){
           <!-- aside -->
 <aside>
 <div class="aside_top">
-<div class="top_div" style="border-right:1px #FFF solid"><span>æŠ•æ ‡æ•°é‡</span><br /><span style="font-size:16px; font-weight:bold">103</span></div>
-<div class="top_div" style="border-right:1px #FFF solid"><span>æµè§ˆäººæ¬¡</span><br /><span style="font-size:16px; font-weight:bold">4791</span></div>
-<div style="float:left; margin:15px 5px;"><span>çŠ¶æ€</span><br /><span style="font-size:13px; color:#0F0;">æ­£æ¥å—æŠ•æ ‡</span></div>
+<div class="top_div" style="border-right:1px #FFF solid"><span>Í¶±êÊıÁ¿</span><br /><span style="font-size:16px; font-weight:bold">103</span></div>
+<div class="top_div" style="border-right:1px #FFF solid"><span>ä¯ÀÀÈË´Î</span><br /><span style="font-size:16px; font-weight:bold">4791</span></div>
+<div style="float:left; margin:15px 5px;"><span>×´Ì¬</span><br /><span style="font-size:13px; color:#0F0;">Õı½ÓÊÜÍ¶±ê</span></div>
 </div>
 <div class="aside_middle">
-<div style="height:35px; text-align:center; line-height:35px; font-size:14px">æŠ•æ ‡å‰©ä½™æ—¶é—´:2å¤©12å°æ—¶33åˆ†33ç§’
+<div style="height:35px; text-align:center; line-height:35px; font-size:14px">Í¶±êÊ£ÓàÊ±¼ä:2Ìì12Ğ¡Ê±33·Ö33Ãë
 <hr style="border:1px #CCC dotted; margin-top:0" />
 </div>
 <div style="margin:20px 30px">
-<p>æ‚¨å¯ä»¥è§£å†³æ­¤éœ€æ±‚?</p>
-<p style=" text-align:center"><input type="button" value="æäº¤ç¨¿ä»¶" id="PopupDivBtn_35" style="width:145px; height:45px; font-size:20px;" /></p>
+<p>Äú¿ÉÒÔ½â¾ö´ËĞèÇó?</p>
+<p style=" text-align:center"><input type="button" value="Ìá½»¸å¼ş" id="PopupDivBtn_35" style="width:145px; height:45px; font-size:20px;" /></p>
     	<div  id="PopupDiv_35" style="display:none" ><br/>
     	
 			<form action="" method="get">
-<p>&nbsp;æˆ‘è¦æŠ•ç¨¿</p>
+<p>&nbsp;ÎÒÒªÍ¶¸å</p>
 
-  <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;æ·»åŠ å›¾ç‰‡è¯´æ˜ï¼ˆå¿…é¡»ï¼‰</p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file"/>&nbsp;&nbsp;&nbsp;æ¯ä¸ªå¤§å°ä¸è¶…è¿‡10MB&nbsp;&nbsp;&nbsp;<a href="" target="_blank">æ— æ³•æ­£å¸¸ä¸Šä¼ ï¼Ÿ</a>
+  <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ìí¼ÓÍ¼Æ¬ËµÃ÷£¨±ØĞë£©</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file"/>&nbsp;&nbsp;&nbsp;Ã¿¸ö´óĞ¡²»³¬¹ı10MB&nbsp;&nbsp;&nbsp;<a href="" target="_blank">ÎŞ·¨Õı³£ÉÏ´«£¿</a>
   </p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;è¿˜æœ‰ä»€ä¹ˆè¦å‘Šè¯‰ä¹°å®¶</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»¹ÓĞÊ²Ã´Òª¸æËßÂò¼Ò</p>
   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <form>
-  <textarea name="" cols="50" rows="5" value="æˆ‘æ¥è¯´ä¸¤å¥"></textarea><br>
+  <textarea name="" cols="50" rows="5" value="ÎÒÀ´ËµÁ½¾ä"></textarea><br>
 			
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="tijiao" type="submit" value="æäº¤" /></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="tijiao" type="submit" value="Ìá½»" /></p>
 </form>
 
   <lable>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  	<input type="checkbox" />æˆ‘å·²é˜…è¯»å¹¶åŒæ„â€œè½¯ä»¶æœåŠ¡å¤–åŒ…ç½‘æŠ•æ ‡åè®®â€
+  	<input type="checkbox" />ÎÒÒÑÔÄ¶Á²¢Í¬Òâ¡°Èí¼ş·şÎñÍâ°üÍøÍ¶±êĞ­Òé¡±
   </lable>
 </form>
 		</div>
-<p>æœ‰ç±»ä¼¼éœ€æ±‚?</p>
+<p>ÓĞÀàËÆĞèÇó?</p>
 </div>
 <div>
-<p style="text-align:center"><input type="button" value="ç«‹å³å‘å¸ƒéœ€æ±‚" style="width:145px; height:25px;" />
+<p style="text-align:center"><input type="button" value="Á¢¼´·¢²¼ĞèÇó" style="width:145px; height:25px;" />
 </p>
 </div>
 <div style="height:18px; background:#f88b12"></div>
 </div>
 
-         <h2><span>é€‚åˆæ‚¨çš„éœ€æ±‚</span> </h2>
+         <h2><span>ÊÊºÏÄúµÄĞèÇó</span> </h2>
               <ul class="services">
-                <li><a href="#">è½¯ä»¶è®¾è®¡</a></li>
-                <li><a href="#">å½±è§†è®¾è®¡</a></li>
+                <li><a href="#">Èí¼şÉè¼Æ</a></li>
+                <li><a href="#">Ó°ÊÓÉè¼Æ</a></li>
                 <li><a href="#">Natus errorsit voluptatem</a></li>
                 <li><a href="#">Accusantium</a></li>
                 <li><a href="#">Doloremque laudtium</a></li>
@@ -179,7 +179,7 @@ function shuru_blur(){
                 <li><a href="#">Eaque ipsaquae</a></li>
                 <li><a href="#">Lnventore veritatis</a></li>
               </ul>
-              <div class="wrapper"><a href="#" class="link1"><span><span>æ›´å¤šéœ€æ±‚</span></span></a></div>
+              <div class="wrapper"><a href="#" class="link1"><span><span>¸ü¶àĞèÇó</span></span></a></div>
           </aside>
         </div>
 		<!-- footer -->

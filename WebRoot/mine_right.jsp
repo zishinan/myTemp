@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -6,11 +6,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>æˆ‘çš„è½¯ä»¶æœåŠ¡å¤–åŒ…</title>
+<title>ÎÒµÄÈí¼ş·şÎñÍâ°ü</title>
 <meta name="description" content="Place your description here">
 <meta name="keywords" content="put, your, keyword, here">
 <meta name="author" content="cssMoban.com - website templates provider">
-<meta charset="utf-8">
+<meta charset="gbk">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
@@ -35,7 +35,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 <body>
 <div class="mineright_div">
-<!--JavaScriptéƒ¨åˆ†-->
+<!--JavaScript²¿·Ö-->
               <SCRIPT language=javascript>
 function secBoard(n)
 {
@@ -47,19 +47,19 @@ mainTable.tBodies[i].style.display="none";
 mainTable.tBodies[n].style.display="block";
 }
           </SCRIPT>
-              <!--HTMLéƒ¨åˆ†-->
+              <!--HTML²¿·Ö-->
 				    <TABLE width=100% border=0 cellPadding=0 cellSpacing=0 id=secTable>
 						<TBODY>
 						  <TR align=middle height=20>
-							<TD align="center" class=sec2 onclick=secBoard(0)>æ‰€æœ‰äº¤æ˜“</TD>
-							<TD align="center" class=sec1 onclick=secBoard(1)>äº¤æ˜“ä¸­</TD>
-							<TD align="center" class=sec1 onclick=secBoard(2)>äº¤æ˜“å®Œæˆ</TD>
-							<TD align="center" class=sec1 onclick=secBoard(3)>äº¤æ˜“å…³é—­</TD>
+							<TD align="center" class=sec2 onclick=secBoard(0)>ËùÓĞ½»Ò×</TD>
+							<TD align="center" class=sec1 onclick=secBoard(1)>½»Ò×ÖĞ</TD>
+							<TD align="center" class=sec1 onclick=secBoard(2)>½»Ò×Íê³É</TD>
+							<TD align="center" class=sec1 onclick=secBoard(3)>½»Ò×¹Ø±Õ</TD>
 						  </TR>
 						</TBODY>
 				   </TABLE>
 				   <TABLE class=main_tab id=mainTable cellSpacing=0 cellPadding=0 width=100% border=0>
-				   <!--å…³äºTBODYæ ‡è®°-->
+				   <!--¹ØÓÚTBODY±ê¼Ç-->
                 <TBODY style="DISPLAY: block">
                   <TR>
                     <TD vAlign=top align=middle><TABLE width=98% height="35" border=0 align="center" cellPadding=0 cellSpacing=0>
@@ -69,20 +69,20 @@ mainTable.tBodies[n].style.display="block";
                           </TR>
                           <TR>
                             <TD width="0%" bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD width="10%" height="25" bgcolor="#FAFBFC" class="f1">äº¤æ˜“æ—¶é—´</TD>
-                            <TD width="31%" height="25" bgcolor="#FAFBFC" class="f1">åç§°|äº¤æ˜“å·</TD>
-							<td width="13%" height="25" bgcolor="#FAFBFC" class="f1">èµé‡‘</td>
-							<td width="14%" height="25" bgcolor="#FAFBFC" class="f1">æœåŠ¡å•†</td>
-							<td width="24%" height="25" bgcolor="#FAFBFC" class="f1">çŠ¶æ€</td>
-							<td width="8%" height="25" bgcolor="#FAFBFC" class="f1">æ“ä½œ</td>
+                            <TD width="10%" height="25" bgcolor="#FAFBFC" class="f1">½»Ò×Ê±¼ä</TD>
+                            <TD width="31%" height="25" bgcolor="#FAFBFC" class="f1">Ãû³Æ|½»Ò×ºÅ</TD>
+							<td width="13%" height="25" bgcolor="#FAFBFC" class="f1">ÉÍ½ğ</td>
+							<td width="14%" height="25" bgcolor="#FAFBFC" class="f1">·şÎñÉÌ</td>
+							<td width="24%" height="25" bgcolor="#FAFBFC" class="f1">×´Ì¬</td>
+							<td width="8%" height="25" bgcolor="#FAFBFC" class="f1">²Ù×÷</td>
                           </TR>
 						  <TR class="td-font">
                             <TD width="0%" bgcolor="#FAFBFC">&nbsp;</TD>
                             <TD width="10%" height="25" bgcolor="#FAFBFC">2012-06-23</TD>
                             <TD width="31%" height="25" bgcolor="#FAFBFC">123</TD>
-							<td width="13%" height="25" bgcolor="#FAFBFC" > ï¿¥ 100 </td>
-							<td width="14%" height="25" bgcolor="#FAFBFC" >çŒªå…«æˆ’</td>
-							<td width="24%" height="25" bgcolor="#FAFBFC" >äº¤æ˜“å…³é—­</td>
+							<td width="13%" height="25" bgcolor="#FAFBFC" > £¤ 100 </td>
+							<td width="14%" height="25" bgcolor="#FAFBFC" >Öí°Ë½ä</td>
+							<td width="24%" height="25" bgcolor="#FAFBFC" >½»Ò×¹Ø±Õ</td>
 							<td width="8%" height="25" bgcolor="#FAFBFC">&nbsp;</td>
                           </TR>
                           <TR>
@@ -92,7 +92,7 @@ mainTable.tBodies[n].style.display="block";
                     </TABLE></TD>
                   </TR>
                 </TBODY>
-				<!--å…³äºcellsé›†åˆ-->
+				<!--¹ØÓÚcells¼¯ºÏ-->
                 <TBODY style="DISPLAY: none">
                   <TR>
                     <TD vAlign=top align=middle><TABLE width=98% height="4" border=0 align="center" cellPadding=0 cellSpacing=0>
@@ -102,8 +102,8 @@ mainTable.tBodies[n].style.display="block";
                           </TR>
                           <TR>
                             <TD width="2%" bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD width="44%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯å•†å®¶å±•</TD>
-                            <TD width="54%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯ç½‘ä¸Šå•†åŸ</TD>
+                            <TD width="44%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÉÌ¼ÒÕ¹</TD>
+                            <TD width="54%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÍøÉÏÉÌ³Ç</TD>
                           </TR>
                           <TR>
                             <TD height="3" colspan="3"></TD>
@@ -112,7 +112,7 @@ mainTable.tBodies[n].style.display="block";
                     </TABLE></TD>
                   </TR>
                 </TBODY>
-				<!--å…³äºtBodiesé›†åˆ-->
+				<!--¹ØÓÚtBodies¼¯ºÏ-->
                 <TBODY style="DISPLAY: none">
                   <TR>
                     <TD vAlign=top align=middle><TABLE width=98% border=0 align="center" cellPadding=0 cellSpacing=0>
@@ -125,8 +125,8 @@ mainTable.tBodies[n].style.display="block";
                           </TR>
                           <TR>
                             <TD width="2%" bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD width="44%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯å•†å®¶å±•</TD>
-                            <TD width="54%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯ç½‘ä¸Šå•†åŸ</TD>
+                            <TD width="44%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÉÌ¼ÒÕ¹</TD>
+                            <TD width="54%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÍøÉÏÉÌ³Ç</TD>
                           </TR>
                           <TR>
                             <TD height="3" colspan="3"></TD>
@@ -135,7 +135,7 @@ mainTable.tBodies[n].style.display="block";
                     </TABLE></TD>
                   </TR>
                 </TBODY>
-				<!--å…³äºdisplayå±æ€§-->
+				<!--¹ØÓÚdisplayÊôĞÔ-->
                 <TBODY style="DISPLAY: none">
                   <TR>
                     <TD vAlign=top align=middle><TABLE width=98% border=0 align="center" cellPadding=0 cellSpacing=0>
@@ -148,8 +148,8 @@ mainTable.tBodies[n].style.display="block";
                           </TR>
                           <TR>
                             <TD width="2%" bgcolor="#FAFBFC">&nbsp;</TD>
-                            <TD width="44%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯å•†å®¶å±•</TD>
-                            <TD width="54%" height="25" bgcolor="#FAFBFC">æ‚¨æœ‰æœªéªŒè¯ç½‘ä¸Šå•†åŸ</TD>
+                            <TD width="44%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÉÌ¼ÒÕ¹</TD>
+                            <TD width="54%" height="25" bgcolor="#FAFBFC">ÄúÓĞÎ´ÑéÖ¤ÍøÉÏÉÌ³Ç</TD>
                           </TR>
                           <TR>
                             <TD height="3" colspan="3"></TD>
