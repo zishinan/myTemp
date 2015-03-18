@@ -43,7 +43,7 @@ public class ControlTask extends ControlDB {
 		try {
 			Connection conn = this.getConn();
 			Statement stmt = conn.createStatement();
-			String sql = "select * from task order by time limit 0,5";
+			String sql = "select * from task order by taskId desc limit 0,5";
 			ResultSet rs = stmt.executeQuery(sql);
 			while (rs.next()) {
 				Task t = new Task();

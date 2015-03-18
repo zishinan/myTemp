@@ -1,4 +1,3 @@
-<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@ page language="java" import="java.util.*,db.*,bean.*"
 	pageEncoding="UTF-8"%>
 <%
@@ -87,64 +86,7 @@
 	</tr>
 	<tr>
 		<td width="70%" height="220" background="">
-			<table width="100%" border="1">
-				<tr>
-
-
-					<div class="category">
-
-
-<% Collection categories = cc.getAllCats(); 
-Iterator iterator = categories.iterator();
-	while (iterator.hasNext()) {
-		Category category = (Category) iterator.next();
-		String categoryName = category.getCatName();
-		int catId = category.getCatId();
-%>		
-		
-		<div class="list1">
-
-							<div class="list1_cate">
-								<span><a href="#"><%=categoryName %></a></span>
-							</div>
-
-
-							<div class="list1_left">
-								<ul>
-										<%
-											Collection c = cn.getSmallCategoryBycatId(catId);
-											Iterator it = c.iterator();
-											while(it.hasNext()){
-												Smallcategory sc = (Smallcategory)it.next();
-										%>
-									<li>
-											<a href="task.jsp?id=<%=sc.getCatId()%>" target="main"
-												style="font-size: 16px; font-weight: bold; color: #1577DC"><%=sc.getSmallName()%></a>
-									</li>
-										<%
-											}
-										%>
-								</ul>
-							</div>
-
-
-						</div>
-		
-		
-		
-<% 
-}
-%>	
-
-
-
-					</div>
-				</tr>
-				<tr>
-					<td height="30" colspan="2"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;快速通道</p>
-					</td>
-				</tr>
-			</table>
+			<jsp:include page="tasks.jsp"></jsp:include>
 		</td>
 		<td width="2%"></td>
 		<td width="28%">
@@ -167,7 +109,7 @@ Iterator iterator = categories.iterator();
 					for (Task task : newTasks) {
 				%>
 					<a href=""><p style="margin-bottom: 0">
-							<%=task.getTitle() %>><span style="color: #999"><%=task.getStartTime() %>></span>
+							<%=task.getTitle() %><span style="color: #999"><%=task.getStartTime() %></span>
 						</p></a> 
 				
 				<%
