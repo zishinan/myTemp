@@ -43,7 +43,39 @@ public class ControlTask extends ControlDB {
 		try {
 			Connection conn = this.getConn();
 			Statement stmt = conn.createStatement();
-			String sql = "select * from task order by taskId desc limit 0,5";
+			String sql = "select * from task where taskState = 0 order by taskId desc limit 0,5";
+			ResultSet rs = stmt.executeQuery(sql);
+			while (rs.next()) {
+				Task t = new Task();
+				t.setTaskId(rs.getInt("taskId"));
+				t.setTitle(rs.getString("title"));
+				t.setTaskContent(rs.getString("taskContent"));
+				t.setMoney(rs.getString("money"));
+				t.setTime(rs.getString("time"));
+				t.setBonusState(rs.getInt("bonusState"));
+				t.setWay(rs.getInt("way"));
+				t.setNumber(rs.getInt("number"));
+				t.setTaskState(rs.getBoolean("istaskState"));
+				t.setStartTime(rs.getString("startTime"));
+				t.setUpload(rs.getString("upload"));
+				result.add(t);
+			}
+			this.closeConn(conn);
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		for (Task task : result) {
+			
+		}
+		return result;
+	}
+	
+	public List<Task> getNewTasks10(){
+		List<Task> result = new ArrayList<Task>();
+		try {
+			Connection conn = this.getConn();
+			Statement stmt = conn.createStatement();
+			String sql = "select * from task where taskState = 0 order by taskId desc limit 0,10";
 			ResultSet rs = stmt.executeQuery(sql);
 			while (rs.next()) {
 				Task t = new Task();
@@ -141,6 +173,10 @@ public class ControlTask extends ControlDB {
 	public Task getTaskByBidId(int bidid) {
 		String sql = "select * from task where taskid in (select bidid from bid where bidid='"
 				+ bidid + "')";
+		return this.getTask(sql);
+	}
+	public Task getTaskByTaskId(int taskId) {
+		String sql = "select * from task where taskid ="+taskId;
 		return this.getTask(sql);
 	}
 
