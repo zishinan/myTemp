@@ -13,6 +13,7 @@
 						<%
 							ControlTask controlTask = new ControlTask();
 							List<Task> tasks = controlTask.getNewTasks10();
+							
 							for (Task task : tasks)
 							{
 						%>
