@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 request.setCharacterEncoding("gbk");
 User u=(User)session.getAttribute("user"); 
 ControlCategory cc=new ControlCategory();
-ControlSmallcategory cn=new ControlSmallcategory();
+List<Category> categories = cc.getAllCats();
 %>
 
 <head>
@@ -84,14 +84,12 @@ ControlSmallcategory cn=new ControlSmallcategory();
 					</ul>
 					<ul>
 						<li class="current"><a href="index.jsp">Ê×Ò³</a></li>
-						<li><a href="index.jsp?cat=1">Java</a></li>
-						<li><a href="index.jsp?cat=2">C#</a></li>
-						<li><a href="index.jsp?cat=3">C++</a></li>
-						<li><a href="index.jsp?cat=4">C</a></li>
-						<li><a href="index.jsp?cat=5">Python</a></li>
-						<li><a href="index.jsp?cat=6">Android</a></li>
-						<li><a href="index.jsp?cat=7">Lua</a></li>
-						<li><a href="index.jsp?cat=8">VB</a></li>
+						<%for(Category category : categories){
+						%>
+						<li><a href="index.jsp?cat=<%=category.getCatId() %>"><%=category.getCatName() %></a></li>
+						<%
+						}
+						%>
 					</ul>
 				</nav>
 			</div>

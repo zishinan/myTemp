@@ -5,6 +5,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import bean.Category;
 import bean.Smallcategory;
@@ -26,8 +27,8 @@ public class ControlCategory extends ControlDB {
 		   }
 		   return i;
 	   }
-	 public Collection getCats(String sql){
-		   Collection c=new ArrayList();
+	 public List<Category> getCats(String sql){
+		 List<Category> c=new ArrayList();
 		   try{
 			   Connection conn=this.getConn();
 			   Statement stmt = conn.createStatement();
@@ -69,7 +70,7 @@ public class ControlCategory extends ControlDB {
 		   }
 		   return ca;
 	   }
-	 public Collection getAllCats(){
+	 public List<Category> getAllCats(){
 		   String sql="select * from category";
 		
 		   return this.getCats(sql);

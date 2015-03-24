@@ -104,8 +104,17 @@
 				<div style="margin: 10px 15px">
 				
 				<%
+				String catId=request.getParameter("cat");
+				
+			    int id=0;
+			    if(catId != null && catId.length() > 0){
+			    	id = Integer.parseInt(catId);
+			    }
 					ControlTask controlTask = new ControlTask();
 					List<Task> newTasks = controlTask.getNewTasks();
+					if(id > 0){
+						newTasks = controlTask.getNewTasksByCatId(id);
+					}
 					for (Task task : newTasks) {
 				%>
 					<a href=""><p style="margin-bottom: 0">

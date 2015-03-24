@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet
 		ControlUser cu = new ControlUser();
 		User u=cu.getUserNameAndGetPwd(userName, userPwd);
 		if(u == null){
-			ServletUtil.alert(response, "您输入的用户名或密码不正确！", "login.jsp");
+			ServletUtil.alert(response, "您输入的用户名或密码不正确！", "enter.jsp");
 			return;
 		}
 		HttpSession session = request.getSession();

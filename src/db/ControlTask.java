@@ -70,6 +70,40 @@ public class ControlTask extends ControlDB {
 		return result;
 	}
 	
+	public List<Task> getNewTasksByCatId(int catId){
+		
+		List<Task> result = new ArrayList<Task>();
+		try {
+			Connection conn = this.getConn();
+			Statement stmt = conn.createStatement();
+			// TODO
+			String sql = "select * from task where taskState = 0 and smallId in () order by taskId desc limit 0,5";
+			ResultSet rs = stmt.executeQuery(sql);
+			while (rs.next()) {
+				Task t = new Task();
+				t.setTaskId(rs.getInt("taskId"));
+				t.setTitle(rs.getString("title"));
+				t.setTaskContent(rs.getString("taskContent"));
+				t.setMoney(rs.getString("money"));
+				t.setTime(rs.getString("time"));
+				t.setBonusState(rs.getInt("bonusState"));
+				t.setWay(rs.getInt("way"));
+				t.setNumber(rs.getInt("number"));
+				t.setTaskState(rs.getBoolean("taskState"));
+				t.setStartTime(rs.getString("startTime"));
+				t.setUpload(rs.getString("upload"));
+				result.add(t);
+			}
+			this.closeConn(conn);
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		for (Task task : result) {
+			
+		}
+		return result;
+	}
+	
 	public List<Task> getNewTasks10(){
 		List<Task> result = new ArrayList<Task>();
 		try {
