@@ -50,10 +50,10 @@ aside{float:left; width:261px}
 <![endif]-->
 </head>
 <%
-	int bidId = Integer.parseInt(request.getParameter("bidId"));
+	/* int bidId = Integer.parseInt(request.getParameter("bidId")); */
 	int taskId = Integer.parseInt(request.getParameter("taskId"));
-	ControlBid cb = new ControlBid();
-	Bid b = cb.getBidByBidId(bidId);
+	/* ControlBid cb = new ControlBid();
+	Bid b = cb.getBidByBidId(bidId); */
 	
 	ControlTask ct = new ControlTask();
 	Task t = ct.getTaskByTaskId(taskId);

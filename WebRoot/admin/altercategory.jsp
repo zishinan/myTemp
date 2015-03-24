@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
  %>  
   <body>
-  <form name="form1" method="post" action="<%=basePath %>servlet/AlterCategoryServlet">
+  <form name="form1" method="post" action="alterCategoryServlet">
     <table width="95%" border="0">
       <tr>
         <td width="20%"><div align="right">类别名称：</div></td>
@@ -35,7 +35,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       <tr>
         <td><div align="right">备注：</div></td>
         <td><label>
-          <textarea name="catNote" cols="70" rows="5" value="<%=c.getCatNote() %>"></textarea>
+          <textarea name="catNote" cols="70" rows="5"></textarea>
         </label></td>
       </tr>
       <tr>

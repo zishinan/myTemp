@@ -22,9 +22,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
   <table width="95%"  id="mytable" cellspacing="0">
     <tr>
-      <th scope="col" class="nobg" width="8%">&nbsp;</th>
       <th scope="col" width="15%">类别名称</th>
-      <th scope="col" width="13%">小类别数</th>
+      <th scope="col" width="13%">备注</th>
       <th scope="col" width="13%">&nbsp;</th>
       <th scope="col" width="13%">&nbsp;</th>
     </tr>
@@ -35,8 +34,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		Category cat=(Category)it.next();
      %>
     <tr>
-      <td><%=x %></td>
       <td><%=cat.getCatName() %></td>
+      <td><%=cat.getCatNote() %></td>
       
       <td>&nbsp;</td>
        <td><a href="<%=basePath %>admin/altercategory.jsp?id=<%=cat.getCatId() %>">修改</a></td>

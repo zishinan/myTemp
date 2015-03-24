@@ -128,9 +128,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 												  <tr>
 													<td><textarea name="taskContent" cols="" rows="" id="taskContent"></textarea></td>
 												  </tr>
-												  <tr>
+												 <!--  <tr>
 													<td><input type="file"/></td>
-												  </tr>
+												  </tr> -->
 												  <tr>
 													<td>联系方式:</td>
 												  </tr>

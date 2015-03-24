@@ -1,9 +1,12 @@
-<%@ page language="java" import="java.util.*,db.*,bean.*" pageEncoding="gbk"%>
+<%@ page language="java" import="java.util.*,db.*,bean.*"
+	pageEncoding="gbk"%>
 <%
-request.setCharacterEncoding("gbk");
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-User u=(User)session.getAttribute("user"); 
+	request.setCharacterEncoding("gbk");
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+	User u = (User) session.getAttribute("user");
 %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
@@ -12,20 +15,25 @@ User u=(User)session.getAttribute("user");
 <LINK href="css/admin.css" type="text/css" rel="stylesheet">
 </HEAD>
 <BODY>
-<TABLE cellSpacing=0 cellPadding=0 width="100%" 
-background="<%=basePath %>images/header_bg.jpg" border=0>
-  <TR height=56>
-    <TD width=260><IMG height=56 src="<%=basePath%>images/header_left.jpg" 
-    width=260></TD>
-    <TD style="FONT-WEIGHT: bold; COLOR: #fff; PADDING-TOP: 20px" 
-      align=middle>当前用户：<%=u.getUserName() %> &nbsp;&nbsp; <A style="COLOR: #fff" 
-      href="" 
-      target=main>修改口令</A> &nbsp;&nbsp; <A style="COLOR: #fff" 
-      onclick="if (confirm('确定要退出吗？')) return true; else return false;" 
-      href="/admin/login.jsp" target=_top>退出系统</A> 
-    </TD>
-    <TD align=right width=268><IMG height=56 
-      src="<%=basePath%>images/header_right.jpg" width=268></TD></TR></TABLE>
-<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
-  <TR bgColor=#1c5db6 height=4>
-    <TD></TD></TR></TABLE></BODY></HTML>
+	<TABLE cellSpacing=0 cellPadding=0 width="100%"
+		background="<%=basePath%>images/header_bg.jpg" border=0>
+		<TR height=56>
+			<TD width=260><IMG height=56
+				src="<%=basePath%>images/header_left.jpg" width=260></TD>
+			<TD style="FONT-WEIGHT: bold; COLOR: #fff; PADDING-TOP: 20px"
+				align=middle>当前用户：<%=u.getUserName()%> &nbsp;&nbsp; <A
+				style="COLOR: #fff"
+				onclick="if (confirm('确定要退出吗？')) return true; else return false;"
+				href="/admin/login.jsp" target=_top>退出系统</A>
+			</TD>
+			<TD align=right width=268><IMG height=56
+				src="<%=basePath%>images/header_right.jpg" width=268></TD>
+		</TR>
+	</TABLE>
+	<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+		<TR bgColor=#1c5db6 height=4>
+			<TD></TD>
+		</TR>
+	</TABLE>
+</BODY>
+</HTML>

@@ -55,7 +55,7 @@ public class ControlTask extends ControlDB {
 				t.setBonusState(rs.getInt("bonusState"));
 				t.setWay(rs.getInt("way"));
 				t.setNumber(rs.getInt("number"));
-				t.setTaskState(rs.getBoolean("istaskState"));
+				t.setTaskState(rs.getBoolean("taskState"));
 				t.setStartTime(rs.getString("startTime"));
 				t.setUpload(rs.getString("upload"));
 				result.add(t);
@@ -87,7 +87,7 @@ public class ControlTask extends ControlDB {
 				t.setBonusState(rs.getInt("bonusState"));
 				t.setWay(rs.getInt("way"));
 				t.setNumber(rs.getInt("number"));
-				t.setTaskState(rs.getBoolean("istaskState"));
+				t.setTaskState(rs.getBoolean("taskState"));
 				t.setStartTime(rs.getString("startTime"));
 				t.setUpload(rs.getString("upload"));
 				result.add(t);
