@@ -86,7 +86,13 @@ public class ControlTask extends ControlDB {
 		try {
 			Connection conn = this.getConn();
 			Statement stmt = conn.createStatement();
-			String sql = "select * from task where taskState = 0 and smallId in ("+ids+") order by taskId desc limit 0,5";
+			String sql = "";
+			if(ids.length() > 0){
+				sql = "select * from task where taskState = 0 and smallId in ("+ids+") order by taskId desc limit 0,5";
+			}else {
+				sql = "select * from task where taskState = 0 order by taskId desc limit 0,5";
+			}
+					
 			ResultSet rs = stmt.executeQuery(sql);
 			while (rs.next()) {
 				Task t = new Task();
