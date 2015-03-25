@@ -62,6 +62,12 @@ aside{float:left; width:261px}
 		<jsp:include page="head.jsp"></jsp:include>
 			标题：<%=t.getTitle() %><br/>
 			内容：<%=t.getTaskContent() %>
+			<button type="button" id="bidTask" value="投标" onclick="bidTaskServlet?taskId=<%=taskId%>"></button>
+			
+			<%
+			ControlBid cb = new ControlBid();
+			cb.listBidByTaskid(taskId);
+			%>
 			
 		<jsp:include page="foot.jsp"></jsp:include>
 	</div>
