@@ -73,26 +73,11 @@ public class ControlTask extends ControlDB {
 	
 	public List<Task> getNewTasksByCatId(int catId){
 		ControlSmallcategory cs = new ControlSmallcategory();
-		List<Smallcategory> allSmall = cs.getAllCats();
-		String ids = "";
-		for (Smallcategory smallcategory : allSmall) {
-			if(smallcategory.getCatId() == catId){
-				ids = ids + smallcategory.getSmallId() + ",";
-			}
-		}
-		if(ids.length() > 0){
-			ids = ids.substring(0, ids.length()-1);
-		}
 		List<Task> result = new ArrayList<Task>();
 		try {
 			Connection conn = this.getConn();
 			Statement stmt = conn.createStatement();
-			String sql = "";
-			if(ids.length() > 0){
-				sql = "select * from task where taskState = 0 and smallId in ("+ids+") order by taskId desc limit 0,5";
-			}else {
-				sql = "select * from task where taskState = 0 order by taskId desc limit 0,5";
-			}
+			String sql = "select * from task where taskState = 0 and catId = "+catId+" order by taskId desc limit 0,5";
 					
 			ResultSet rs = stmt.executeQuery(sql);
 			while (rs.next()) {

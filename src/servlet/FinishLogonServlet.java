@@ -16,6 +16,8 @@ import bean.*;
 
 @WebServlet("/finishLogonServlet")
 public class FinishLogonServlet extends HttpServlet {
+	private static final long serialVersionUID = -8924282724385257730L;
+
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
@@ -24,7 +26,9 @@ public class FinishLogonServlet extends HttpServlet {
 		User u = (User) req.getSession(true).getAttribute("user");
 		Task t = new Task();
 		int catId = Integer.parseInt(req.getParameter("catId"));
-		int smallId = Integer.parseInt(req.getParameter("smallId"));
+		String smallIdString = req.getParameter("smallId");
+		System.out.println("smallId is :"+smallIdString);
+		int smallId = Integer.parseInt(smallIdString);
 		t.setCatId(catId);
 		t.setTitle(req.getParameter("title"));
 		t.setTaskContent(req.getParameter("taskContent"));
