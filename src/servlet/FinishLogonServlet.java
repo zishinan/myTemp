@@ -24,11 +24,8 @@ public class FinishLogonServlet extends HttpServlet {
 		User u = (User) req.getSession(true).getAttribute("user");
 		Task t = new Task();
 		int catId = Integer.parseInt(req.getParameter("catId"));
-		System.out.println("yyy" + catId);
-		ControlSmallcategory smallcat = new ControlSmallcategory();
-		Smallcategory c = smallcat.getSmallcategorysById(catId);
-		int smallId = c.getSmallId();
-		System.out.println("ddddd" + c.getSmallId());
+		int smallId = Integer.parseInt(req.getParameter("smallId"));
+		t.setCatId(catId);
 		t.setTitle(req.getParameter("title"));
 		t.setTaskContent(req.getParameter("taskContent"));
 		t.setTime(req.getParameter("time"));

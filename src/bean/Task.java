@@ -6,6 +6,7 @@ public class Task {
 	private String taskContent;
 	private String time;
 	private String money;
+	private int catId;
 	private int smallId;
 	private int uId;
 	private int bonusState;
@@ -15,6 +16,19 @@ public class Task {
 	private String startTime;
 	private int userId;
 	private String upload;
+	
+	public int getCatId() {
+		return catId;
+	}
+	public void setCatId(int catId) {
+		this.catId = catId;
+	}
+	public int getuId() {
+		return uId;
+	}
+	public void setuId(int uId) {
+		this.uId = uId;
+	}
 	public int getTaskId() {
 		return taskId;
 	}

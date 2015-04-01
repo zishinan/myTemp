@@ -13,8 +13,8 @@ public class ControlTask extends ControlDB {
 			Connection conn = this.getConn();
 			String sql = "insert into task"
 					+ "(title,taskContent,time,money,smallId,"
-					+ "bonusState,way,number,taskState,startTime,userId,upload,uid)"
-					+ "values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
+					+ "bonusState,way,number,taskState,startTime,userId,upload,uid,catId)"
+					+ "values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, t.getTitle());
 			pstmt.setString(2, t.getTaskContent());
@@ -29,6 +29,7 @@ public class ControlTask extends ControlDB {
 			pstmt.setInt(11, t.getUserId());
 			pstmt.setString(12, t.getUpload());
 			pstmt.setInt(13, t.getUId());
+			pstmt.setInt(14, t.getCatId());
 			i = pstmt.executeUpdate();
 			this.closeConn(conn);
 		} catch (Exception ex) {
