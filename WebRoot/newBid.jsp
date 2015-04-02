@@ -99,7 +99,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<div class="left-top-corner">
 									<div class="right-top-corner">
 										<div class="inner">
-											<h2>发布需求</h2>
+											<h2>投标</h2>
 											<form id="contacts-form" method="post"action="newBidServlet">
 												<table width="100%" border="1">
 												

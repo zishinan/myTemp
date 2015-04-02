@@ -20,7 +20,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="css1/chili.css" />
 	<link rel="stylesheet" type="text/css" href="css1/screen.css" />
 	<link rel="stylesheet" type="text/css" href="css1/index.css">
-<title>投标内容显示href172</title>
+<title></title>
 <meta name="description" content="Place your description here">
 <meta name="keywords" content="put, your, keyword, here">
 <meta name="author" content="cssMoban.com - website templates provider">
@@ -61,8 +61,8 @@ aside{float:left; width:261px}
 <!-- header -->
 		<jsp:include page="head.jsp"></jsp:include>
 			标题：<%=t.getTitle() %><br/>
-			内容：<%=t.getTaskContent() %>
-			<button type="button" id="bidTask" value="投标" onclick="bidTaskServlet?taskId=<%=taskId%>"></button>
+			内容：<%=t.getTaskContent() %><br/>
+			<input type="button" id="bidTask" value="投 标" style="width:auto; background-color:#FF9900" onclick="bidTaskServlet?taskId=<%=taskId%>"/>
 			
 			<%
 			ControlBid cb = new ControlBid();

@@ -4,11 +4,19 @@ public class Review {
 	private int reviewId;
 	private int taskId;
 	private int userId;
+	private String reviewTitle;
 	private String reviewContent;
 	private String reviewTime;
 	private String reviewName;
 	private boolean isAnnoymous;
 	private boolean isAudit;
+	
+	public String getReviewTitle() {
+		return reviewTitle;
+	}
+	public void setReviewTitle(String reviewTitle) {
+		this.reviewTitle = reviewTitle;
+	}
 	public int getReviewId() {
 		return reviewId;
 	}

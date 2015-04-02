@@ -11,8 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import tools.ServletUtil;
+import bean.Bid;
 import bean.Task;
 import bean.User;
+import db.ControlBid;
 import db.ControlTask;
 import db.ControlUser;
 
@@ -27,19 +29,17 @@ public class NewBidServlet extends HttpServlet
 		response.setCharacterEncoding("gbk");
 		request.setCharacterEncoding("gbk");
 		String taskId = request.getParameter("taskId");
-		int id = 0;
-		if(taskId != null && taskId.length() > 0){
-			id = Integer.parseInt(taskId);
+		String title = request.getParameter("title");
+		String taskContent = request.getParameter("taskContent");
+		ControlBid controlBid = new ControlBid();
+		Bid b = new Bid();
+		b.setMessage(title);
+		b.setReply(taskContent);
+		User user = (User)request.getSession().getAttribute("user");
+		if(user!=null){
+			b.setServerName(user.getUserName());
 		}
-		
-		User user = (User) request.getSession().getAttribute("user");
-		ControlTask ct = new ControlTask();
-		Task task = ct.getTaskByTaskId(id);
-		if(task.getUserId() == user.getUserId()){
-			ServletUtil.alert(response, "不能投自己的需求.", "sitemap.jsp");
-		}
-		request.getSession().setAttribute("user", user);
-		request.getSession().setAttribute("taskId", id);
+		controlBid.insertBid(b);
 		response.sendRedirect("newBId.jsp");
 	}
 }

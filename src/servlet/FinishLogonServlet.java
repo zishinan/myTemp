@@ -1,7 +1,6 @@
 package servlet;
 
 import java.io.IOException;
-import java.sql.Connection;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,8 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import tools.ServletUtil;
 import tools.VeDate;
-import db.*;
-import bean.*;
+import bean.Task;
+import bean.User;
+import db.ControlTask;
 
 @WebServlet("/finishLogonServlet")
 public class FinishLogonServlet extends HttpServlet {
@@ -23,11 +23,18 @@ public class FinishLogonServlet extends HttpServlet {
 			throws ServletException, IOException {
 		req.setCharacterEncoding("gbk");
 		resp.setCharacterEncoding("gbk");
+		
 		User u = (User) req.getSession(true).getAttribute("user");
+		if(u == null){
+			ServletUtil.alert(resp, "ÇëÏÈµÇÂ½!", "enter.jsp");
+		}
+		
 		Task t = new Task();
 		int catId = Integer.parseInt(req.getParameter("catId"));
 		String smallIdString = req.getParameter("smallId");
+		
 		System.out.println("smallId is :"+smallIdString);
+		
 		int smallId = Integer.parseInt(smallIdString);
 		t.setCatId(catId);
 		t.setTitle(req.getParameter("title"));

@@ -107,7 +107,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 													<select name="catId" id="catId">
 														<option value="">--«Î—°‘Ò--</option>
 													</select> 
-													<select name="smallId " id="smallId">
+													<select name="smallId" id="smallId">
 														<option value="">--«Î—°‘Ò--</option>
 													</select>
 													
