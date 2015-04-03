@@ -33,7 +33,7 @@ public class ControlBid extends ControlDB {
 		return b;
 	}
 	public List<Bid> listBidByTaskid(int taskId){
-		String sql = "slect * from bid where taskId = "+ taskId;
+		String sql = "select * from bid where taskId = "+ taskId;
 		List<Bid> bids = new ArrayList<Bid>();
 		try{
 			Connection conn=this.getConn();
