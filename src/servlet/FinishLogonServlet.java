@@ -27,6 +27,7 @@ public class FinishLogonServlet extends HttpServlet {
 		User u = (User) req.getSession(true).getAttribute("user");
 		if(u == null){
 			ServletUtil.alert(resp, "ÇëÏÈµÇÂ½!", "enter.jsp");
+			return;
 		}
 		
 		Task t = new Task();
